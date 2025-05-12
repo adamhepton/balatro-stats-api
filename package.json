@@ -1,0 +1,20 @@
+{
+  "name": "balatro-profile-analysis",
+  "version": "1.0.0",
+  "description": "A utility to analyse a saved profile from Balatro",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "balatro": "node main.js"
+  },
+  "type": "module",
+  "author": "Prox <prox@prox.fyi>",
+  "license": "ISC",
+  "imports": {
+    "#data/*.json": "./data/*.json",
+    "#src/*.js": "./src/*.js"
+  },
+  "dependencies": {
+    "pako": "^2.1.0"
+  }
+}
