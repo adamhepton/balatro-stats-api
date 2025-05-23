@@ -1,330 +1,745 @@
 {
-  "MEMORY": {
-    "stake": 6,
-    "deck": "Red Deck"
-  },
-  "joker_usage": {
-    "j_shoot_the_moon": {
-      "order": 140,
-      "count": 324,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 8,
-        "stake_green": 3,
-        "stake_white": 6,
-        "stake_blue": 2,
-        "stake_purple": 3
-      },
-      "losses": [
-        6,
-        null,
-        3,
-        null,
-        2,
-        3,
-        8,
-        3
-      ],
-      "wins_by_key": {
-        "stake_red": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        1
-      ]
-    },
-    "j_drivers_license": {
-      "order": 141,
-      "count": 91,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 2,
-        "stake_green": 1,
-        "stake_white": 3,
-        "stake_purple": 2
-      },
-      "losses": [
-        3,
-        null,
-        1,
-        null,
-        null,
-        2,
-        2,
-        3
-      ],
-      "wins_by_key": {
-        "stake_red": 1,
-        "stake_blue": 1
-      },
-      "wins": [
-        null,
-        1,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_8_ball": {
-      "order": 26,
-      "count": 137,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 4,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_white": 2,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        2,
-        1,
-        1,
-        null,
-        1,
-        4,
-        4,
-        5
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_misprint": {
-      "order": 27,
-      "count": 445,
-      "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 8,
-        "stake_green": 5,
-        "stake_white": 10,
-        "stake_red": 1,
-        "stake_purple": 6
-      },
-      "losses": [
-        10,
-        1,
-        5,
-        null,
-        null,
-        6,
-        8,
-        6
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_dusk": {
-      "order": 28,
-      "count": 113,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 4,
-        "stake_green": 2,
-        "stake_white": 1,
-        "stake_purple": 5
-      },
-      "losses": [
-        1,
-        null,
-        2,
-        null,
-        null,
-        5,
-        4,
-        3
-      ],
-      "wins_by_key": {},
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_diet_cola": {
-      "order": 94,
-      "count": 30,
-      "losses_by_key": {
-        "stake_white": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_flash": {
-      "order": 96,
+  "consumeable_usage": {
+    "c_talisman": {
       "count": 81,
+      "order": 4
+    },
+    "c_aura": {
+      "count": 138,
+      "order": 5
+    },
+    "c_wraith": {
+      "count": 55,
+      "order": 6
+    },
+    "c_sigil": {
+      "count": 38,
+      "order": 7
+    },
+    "c_ouija": {
+      "count": 59,
+      "order": 8
+    },
+    "c_ectoplasm": {
+      "count": 87,
+      "order": 9
+    },
+    "c_immolate": {
+      "count": 116,
+      "order": 10
+    },
+    "c_ankh": {
+      "count": 40,
+      "order": 11
+    },
+    "c_deja_vu": {
+      "count": 104,
+      "order": 12
+    },
+    "c_hex": {
+      "count": 208,
+      "order": 13
+    },
+    "c_trance": {
+      "count": 44,
+      "order": 14
+    },
+    "c_familiar": {
+      "count": 59,
+      "order": 1
+    },
+    "c_fool": {
+      "count": 394,
+      "order": 1
+    },
+    "c_cryptid": {
+      "count": 115,
+      "order": 16
+    },
+    "c_planet_x": {
+      "count": 220,
+      "order": 10
+    },
+    "c_soul": {
+      "count": 54,
+      "order": 17
+    },
+    "c_magician": {
+      "count": 429,
+      "order": 2
+    },
+    "c_hanged_man": {
+      "count": 669,
+      "order": 13
+    },
+    "c_black_hole": {
+      "count": 29,
+      "order": 18
+    },
+    "c_high_priestess": {
+      "count": 359,
+      "order": 3
+    },
+    "c_ceres": {
+      "count": 79,
+      "order": 11
+    },
+    "c_saturn": {
+      "count": 365,
+      "order": 6
+    },
+    "c_empress": {
+      "count": 296,
+      "order": 4
+    },
+    "c_strength": {
+      "count": 459,
+      "order": 12
+    },
+    "c_eris": {
+      "count": 123,
+      "order": 12
+    },
+    "c_emperor": {
+      "count": 530,
+      "order": 5
+    },
+    "c_wheel_of_fortune": {
+      "count": 402,
+      "order": 11
+    },
+    "c_heirophant": {
+      "count": 259,
+      "order": 6
+    },
+    "c_pluto": {
+      "count": 574,
+      "order": 9
+    },
+    "c_moon": {
+      "count": 172,
+      "order": 19
+    },
+    "c_lovers": {
+      "count": 225,
+      "order": 7
+    },
+    "c_neptune": {
+      "count": 288,
+      "order": 8
+    },
+    "c_chariot": {
+      "count": 292,
+      "order": 8
+    },
+    "c_uranus": {
+      "count": 625,
+      "order": 7
+    },
+    "c_justice": {
+      "count": 200,
+      "order": 9
+    },
+    "c_earth": {
+      "count": 623,
+      "order": 3
+    },
+    "c_hermit": {
+      "count": 507,
+      "order": 10
+    },
+    "c_medium": {
+      "count": 69,
+      "order": 15
+    },
+    "c_death": {
+      "count": 809,
+      "order": 14
+    },
+    "c_temperance": {
+      "count": 527,
+      "order": 15
+    },
+    "c_devil": {
+      "count": 170,
+      "order": 16
+    },
+    "c_tower": {
+      "count": 96,
+      "order": 17
+    },
+    "c_star": {
+      "count": 151,
+      "order": 18
+    },
+    "c_mars": {
+      "count": 466,
+      "order": 4
+    },
+    "c_sun": {
+      "count": 277,
+      "order": 20
+    },
+    "c_jupiter": {
+      "count": 581,
+      "order": 5
+    },
+    "c_judgement": {
+      "count": 266,
+      "order": 21
+    },
+    "c_world": {
+      "count": 280,
+      "order": 22
+    },
+    "c_mercury": {
+      "count": 565,
+      "order": 1
+    },
+    "c_grim": {
+      "count": 104,
+      "order": 2
+    },
+    "c_venus": {
+      "count": 511,
+      "order": 2
+    },
+    "c_incantation": {
+      "count": 38,
+      "order": 3
+    }
+  },
+  "challenge_progress": {
+    "completed": {
+      "c_rich_1": true
+    },
+    "unlocked": {}
+  },
+  "challenges_unlocked": 6,
+  "joker_usage": {
+    "j_photograph": {
       "losses_by_key": {
-        "stake_gold": 2,
-        "stake_purple": 1
+        "stake_red": 1,
+        "stake_purple": 2,
+        "stake_orange": 5,
+        "stake_gold": 6,
+        "stake_white": 3,
+        "stake_blue": 2,
+        "stake_green": 3
       },
+      "count": 222,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_purple": 1,
+        "stake_orange": 1
+      },
+      "order": 78,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ],
       "losses": [
-        null,
-        null,
-        null,
-        null,
+        3,
+        1,
+        3,
         null,
         2,
+        2,
+        5,
+        6
+      ]
+    },
+    "j_family": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 5,
+        "stake_orange": 3,
+        "stake_gold": 5,
+        "stake_white": 1,
+        "stake_black": 1,
+        "stake_green": 2
+      },
+      "count": 223,
+      "wins_by_key": {
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_gold": 1
+      },
+      "order": 133,
+      "wins": [
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        1,
+        1,
+        2,
+        1,
+        null,
+        5,
+        3,
+        5
+      ]
+    },
+    "j_gift": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_orange": 5,
+        "stake_gold": 4,
+        "stake_white": 4,
+        "stake_blue": 2,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "count": 99,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 79,
+      "wins": [
+        1
+      ],
+      "losses": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        5,
+        5
+      ]
+    },
+    "j_order": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 2,
+        "stake_gold": 6,
+        "stake_white": 1,
+        "stake_black": 1
+      },
+      "count": 120,
+      "wins_by_key": {
+        "stake_white": 2
+      },
+      "order": 134,
+      "wins": [
+        2
+      ],
+      "losses": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        6
+      ]
+    },
+    "j_tribe": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 2,
+        "stake_gold": 4,
+        "stake_white": 2,
+        "stake_black": 1
+      },
+      "count": 82,
+      "wins_by_key": {
+        "stake_orange": 1,
+        "stake_white": 1
+      },
+      "order": 135,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        null,
+        1,
+        null,
+        3,
+        2,
+        4
+      ]
+    },
+    "j_erosion": {
+      "losses_by_key": {
+        "stake_purple": 6,
+        "stake_orange": 8,
+        "stake_gold": 2,
+        "stake_white": 4,
+        "stake_blue": 2,
+        "stake_black": 1
+      },
+      "count": 308,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_gold": 1,
+        "stake_white": 3,
+        "stake_blue": 2
+      },
+      "order": 81,
+      "wins": [
+        3,
+        1,
+        1,
+        null,
+        2,
+        null,
         null,
         2
       ],
-      "wins_by_key": {
-        "stake_red": 1
+      "losses": [
+        4,
+        null,
+        null,
+        1,
+        2,
+        6,
+        8,
+        3
+      ]
+    },
+    "j_stuntman": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 6,
+        "stake_gold": 11,
+        "stake_blue": 1,
+        "stake_black": 2,
+        "stake_green": 2
       },
+      "count": 325,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_gold": 1,
+        "stake_blue": 2,
+        "stake_black": 1,
+        "stake_purple": 2
+      },
+      "order": 136,
       "wins": [
         null,
+        1,
+        1,
+        1,
+        2,
+        2,
+        null,
+        1
+      ],
+      "losses": [
+        null,
+        null,
+        2,
+        2,
+        1,
+        1,
+        6,
+        11
+      ]
+    },
+    "j_reserved_parking": {
+      "losses_by_key": {
+        "stake_white": 1,
+        "stake_green": 2,
+        "stake_orange": 3,
+        "stake_gold": 1
+      },
+      "count": 71,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 82,
+      "wins": [
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        3,
         1
       ]
     },
-    "j_walkie_talkie": {
-      "order": 101,
-      "count": 338,
+    "j_invisible": {
       "losses_by_key": {
-        "stake_gold": 8,
-        "stake_orange": 9,
-        "stake_green": 5,
-        "stake_red": 2,
-        "stake_black": 3,
-        "stake_white": 1,
+        "stake_red": 1,
+        "stake_purple": 2,
+        "stake_orange": 1,
+        "stake_gold": 2,
         "stake_blue": 1,
-        "stake_purple": 3
+        "stake_green": 2
       },
+      "count": 52,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 137,
+      "wins": [
+        1
+      ],
       "losses": [
+        null,
         1,
         2,
+        null,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    "j_mail": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 3,
+        "stake_orange": 9,
+        "stake_gold": 7,
+        "stake_white": 5,
+        "stake_blue": 1,
+        "stake_green": 3
+      },
+      "count": 232,
+      "wins_by_key": {},
+      "order": 83,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
         5,
+        1,
         3,
+        null,
         1,
         3,
         9,
-        8
-      ],
-      "wins_by_key": {
-        "stake_black": 2,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        2
+        7
       ]
     },
-    "j_selzer": {
-      "order": 102,
-      "count": 81,
+    "j_brainstorm": {
       "losses_by_key": {
-        "stake_gold": 1,
+        "stake_red": 2,
+        "stake_green": 1,
+        "stake_orange": 2,
+        "stake_gold": 5,
         "stake_white": 1,
-        "stake_orange": 2
-      },
-      "losses": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2,
-        1
-      ],
-      "wins_by_key": {
+        "stake_blue": 2,
         "stake_black": 1,
-        "stake_orange": 1,
-        "stake_blue": 1
+        "stake_purple": 8
       },
-      "wins": [
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1
-      ]
-    },
-    "j_castle": {
-      "order": 103,
-      "count": 224,
-      "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 6,
-        "stake_green": 3,
-        "stake_white": 1,
-        "stake_blue": 1,
-        "stake_red": 1
-      },
-      "losses": [
-        1,
-        1,
-        3,
-        null,
-        1,
-        null,
-        6,
-        6
-      ],
+      "count": 295,
       "wins_by_key": {
         "stake_red": 2,
-        "stake_white": 3
+        "stake_blue": 1,
+        "stake_orange": 1,
+        "stake_gold": 1
       },
+      "order": 138,
       "wins": [
+        null,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        8,
+        2,
+        5
+      ]
+    },
+    "j_to_the_moon": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 2,
+        "stake_gold": 1,
+        "stake_white": 7,
+        "stake_blue": 3,
+        "stake_black": 1
+      },
+      "count": 83,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 84,
+      "wins": [
+        1
+      ],
+      "losses": [
+        7,
+        null,
+        null,
+        1,
         3,
+        2,
+        2,
+        1
+      ]
+    },
+    "j_satellite": {
+      "losses_by_key": {
+        "stake_white": 2
+      },
+      "count": 21,
+      "wins_by_key": {},
+      "order": 139,
+      "wins": {},
+      "losses": [
         2
       ]
     },
-    "j_campfire": {
-      "order": 105,
-      "count": 45,
+    "j_shoot_the_moon": {
       "losses_by_key": {
-        "stake_gold": 2,
-        "stake_white": 1,
-        "stake_orange": 2
+        "stake_purple": 3,
+        "stake_orange": 8,
+        "stake_gold": 3,
+        "stake_white": 6,
+        "stake_blue": 2,
+        "stake_green": 3
       },
+      "count": 337,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_white": 1
+      },
+      "order": 140,
+      "wins": [
+        1,
+        1
+      ],
       "losses": [
+        6,
+        null,
+        3,
+        null,
+        2,
+        3,
+        8,
+        4
+      ]
+    },
+    "j_drivers_license": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 2,
+        "stake_gold": 3,
+        "stake_white": 3,
+        "stake_green": 1
+      },
+      "count": 91,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_blue": 1
+      },
+      "order": 141,
+      "wins": [
+        null,
         1,
         null,
         null,
-        null,
-        null,
-        2,
-        2,
-        2
+        1
       ],
-      "wins_by_key": {},
-      "wins": {}
+      "losses": [
+        3,
+        null,
+        1,
+        null,
+        null,
+        2,
+        2,
+        3
+      ]
+    },
+    "j_cartomancer": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 1,
+        "stake_gold": 4,
+        "stake_white": 5,
+        "stake_black": 1,
+        "stake_green": 1
+      },
+      "count": 137,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 142,
+      "wins": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        1
+      ],
+      "losses": [
+        5,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        5
+      ]
     },
     "j_astronomer": {
-      "order": 143,
-      "count": 72,
       "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
         "stake_green": 1,
-        "stake_black": 3,
+        "stake_orange": 1,
+        "stake_gold": 1,
         "stake_white": 1,
-        "stake_blue": 1
+        "stake_blue": 1,
+        "stake_black": 3
       },
+      "count": 72,
+      "wins_by_key": {},
+      "order": 143,
+      "wins": {},
       "losses": [
         1,
         null,
@@ -334,22 +749,26 @@
         null,
         1,
         1
-      ],
-      "wins_by_key": {},
-      "wins": {}
+      ]
     },
     "j_burnt": {
-      "order": 144,
-      "count": 157,
       "losses_by_key": {
-        "stake_gold": 6,
+        "stake_purple": 6,
         "stake_orange": 4,
-        "stake_green": 2,
-        "stake_black": 3,
+        "stake_gold": 6,
         "stake_white": 3,
         "stake_blue": 1,
-        "stake_purple": 6
+        "stake_black": 3,
+        "stake_green": 2
       },
+      "count": 157,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 144,
+      "wins": [
+        1
+      ],
       "losses": [
         3,
         null,
@@ -359,23 +778,34 @@
         6,
         4,
         6
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
       ]
     },
     "j_bootstraps": {
-      "order": 145,
-      "count": 147,
       "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 6,
         "stake_gold": 6,
         "stake_white": 2,
-        "stake_blue": 2,
-        "stake_orange": 6
+        "stake_blue": 2
       },
+      "count": 167,
+      "wins_by_key": {
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 145,
+      "wins": [
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1
+      ],
       "losses": [
         2,
         null,
@@ -385,42 +815,53 @@
         1,
         6,
         6
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 2
+      ]
+    },
+    "j_caino": {
+      "losses_by_key": {
+        "stake_white": 1,
+        "stake_orange": 1,
+        "stake_gold": 1
       },
+      "count": 64,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_gold": 1
+      },
+      "order": 146,
       "wins": [
-        2,
-        null,
-        null,
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1
       ]
     },
     "j_triboulet": {
-      "order": 147,
-      "count": 93,
       "losses_by_key": {
-        "stake_gold": 1,
         "stake_blue": 2,
-        "stake_purple": 1
+        "stake_purple": 1,
+        "stake_gold": 1
       },
-      "losses": [
-        null,
-        null,
-        null,
-        null,
-        2,
-        1,
-        null,
-        1
-      ],
+      "count": 93,
       "wins_by_key": {
-        "stake_gold": 1,
-        "stake_red": 1
+        "stake_red": 1,
+        "stake_gold": 1
       },
+      "order": 147,
       "wins": [
         null,
         1,
@@ -430,954 +871,144 @@
         null,
         null,
         1
+      ],
+      "losses": [
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        null,
+        1
+      ]
+    },
+    "j_yorick": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 2,
+        "stake_gold": 3,
+        "stake_white": 1,
+        "stake_green": 1
+      },
+      "count": 51,
+      "wins_by_key": {
+        "stake_white": 2,
+        "stake_green": 1
+      },
+      "order": 148,
+      "wins": [
+        2,
+        null,
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        2,
+        2,
+        3
       ]
     },
     "j_chicot": {
-      "order": 149,
-      "count": 32,
       "losses_by_key": {
-        "stake_gold": 2,
         "stake_white": 1,
         "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        2
-      ],
-      "wins_by_key": {
-        "stake_blue": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_acrobat": {
-      "order": 108,
-      "count": 156,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 6,
-        "stake_green": 2,
-        "stake_black": 1,
-        "stake_white": 4,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        4,
-        null,
-        2,
-        1,
-        1,
-        4,
-        6,
-        5
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_white": 1,
-        "stake_green": 1
-      },
-      "wins": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_sock_and_buskin": {
-      "order": 109,
-      "count": 103,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 5,
-        "stake_green": 4,
-        "stake_red": 1,
-        "stake_white": 4,
-        "stake_blue": 2,
-        "stake_purple": 2
-      },
-      "losses": [
-        4,
-        1,
-        4,
-        null,
-        3,
-        2,
-        5,
-        2
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_swashbuckler": {
-      "order": 110,
-      "count": 534,
-      "losses_by_key": {
-        "stake_gold": 13,
-        "stake_orange": 8,
-        "stake_green": 2,
-        "stake_red": 1,
-        "stake_black": 3,
-        "stake_white": 12,
-        "stake_blue": 5,
-        "stake_purple": 5
-      },
-      "losses": [
-        12,
-        1,
-        2,
-        3,
-        5,
-        5,
-        8,
-        13
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_white": 3,
-        "stake_blue": 2,
-        "stake_purple": 1
-      },
-      "wins": [
-        3,
-        null,
-        1,
-        null,
-        2,
-        1,
-        1,
-        1
-      ]
-    },
-    "j_obelisk": {
-      "order": 75,
-      "count": 118,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 3,
-        "stake_green": 1,
-        "stake_white": 3,
-        "stake_purple": 1
-      },
-      "losses": [
-        3,
-        null,
-        1,
-        null,
-        null,
-        1,
-        3,
-        5
-      ],
-      "wins_by_key": {
+        "stake_purple": 1,
         "stake_gold": 2
       },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2
-      ]
-    },
-    "j_smeared": {
-      "order": 113,
-      "count": 125,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_white": 6,
-        "stake_orange": 3,
-        "stake_purple": 1
-      },
-      "losses": [
-        6,
-        null,
-        null,
-        null,
-        null,
-        1,
-        3,
-        2
-      ],
+      "count": 32,
       "wins_by_key": {
-        "stake_white": 3
-      },
-      "wins": [
-        3
-      ]
-    },
-    "j_rough_gem": {
-      "order": 116,
-      "count": 43,
-      "losses_by_key": {
-        "stake_orange": 2,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 2
-      },
-      "losses": [
-        1,
-        null,
-        1,
-        1,
-        2,
-        1,
-        2
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_space": {
-      "order": 45,
-      "count": 233,
-      "losses_by_key": {
-        "stake_gold": 8,
-        "stake_orange": 2,
-        "stake_green": 2,
-        "stake_black": 1,
-        "stake_white": 5,
-        "stake_red": 1,
-        "stake_purple": 6
-      },
-      "losses": [
-        5,
-        1,
-        2,
-        1,
-        null,
-        7,
-        2,
-        8
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_egg": {
-      "order": 46,
-      "count": 451,
-      "losses_by_key": {
-        "stake_gold": 8,
-        "stake_orange": 9,
-        "stake_green": 5,
-        "stake_red": 2,
-        "stake_black": 2,
-        "stake_white": 8,
-        "stake_blue": 1,
-        "stake_purple": 8
-      },
-      "losses": [
-        8,
-        2,
-        5,
-        2,
-        1,
-        11,
-        9,
-        8
-      ],
-      "wins_by_key": {
-        "stake_blue": 1,
-        "stake_white": 3
-      },
-      "wins": [
-        3,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_burglar": {
-      "order": 47,
-      "count": 100,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 5,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        null,
-        null,
-        null,
-        null,
-        1,
-        2,
-        5,
-        3
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "j_clever": {
-      "order": 13,
-      "count": 130,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 3,
-        "stake_green": 3,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        null,
-        null,
-        3,
-        null,
-        1,
-        2,
-        3,
-        2
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_runner": {
-      "order": 49,
-      "count": 134,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 4,
-        "stake_black": 2,
-        "stake_white": 3,
-        "stake_purple": 1
-      },
-      "losses": [
-        3,
-        null,
-        null,
-        2,
-        null,
-        2,
-        4,
-        4
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_ice_cream": {
-      "order": 50,
-      "count": 169,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 4,
-        "stake_green": 1,
-        "stake_white": 2,
-        "stake_purple": 2
-      },
-      "losses": [
-        2,
-        null,
-        1,
-        null,
-        1,
-        2,
-        4,
-        2
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_red": 1
-      },
-      "wins": [
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_ring_master": {
-      "order": 121,
-      "count": 56,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 3,
-        "stake_green": 3,
-        "stake_white": 2,
         "stake_blue": 1
       },
-      "losses": [
-        2,
-        null,
-        3,
-        null,
-        1,
-        null,
-        3,
-        1
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_ceremonial": {
-      "order": 21,
-      "count": 257,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 5,
-        "stake_green": 5,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 2,
-        "stake_blue": 2,
-        "stake_purple": 2
-      },
-      "losses": [
-        2,
-        1,
-        5,
-        1,
-        2,
-        3,
-        5,
-        4
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_red": 1,
-        "stake_blue": 1
-      },
+      "order": 149,
       "wins": [
-        1,
-        1,
+        null,
+        null,
         null,
         null,
         1
-      ]
-    },
-    "j_popcorn": {
-      "order": 97,
-      "count": 150,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        1,
-        4
       ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_flower_pot": {
-      "order": 122,
-      "count": 72,
-      "losses_by_key": {
-        "stake_white": 3,
-        "stake_orange": 2
-      },
       "losses": [
-        3,
+        1,
         null,
         null,
         null,
-        null,
+        1,
+        1,
         null,
         2
-      ],
-      "wins_by_key": {},
-      "wins": {}
+      ]
     },
-    "j_luchador": {
-      "order": 77,
-      "count": 21,
+    "j_perkeo": {
       "losses_by_key": {
-        "stake_white": 1,
-        "stake_orange": 1
-      },
-      "losses": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_chaos": {
-      "order": 30,
-      "count": 109,
-      "losses_by_key": {
-        "stake_gold": 5,
+        "stake_red": 1,
+        "stake_green": 1,
         "stake_orange": 3,
-        "stake_green": 1,
-        "stake_white": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        3,
-        5
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_jolly": {
-      "order": 6,
-      "count": 194,
-      "losses_by_key": {
-        "stake_gold": 9,
-        "stake_orange": 2,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        3,
-        null,
-        null,
-        null,
-        1,
-        3,
-        2,
-        9
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        2
-      ]
-    },
-    "j_wily": {
-      "order": 12,
-      "count": 305,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 4,
-        "stake_green": 3,
-        "stake_black": 2,
-        "stake_white": 1,
-        "stake_blue": 1,
-        "stake_purple": 8
-      },
-      "losses": [
-        1,
-        null,
-        3,
-        2,
-        1,
-        8,
-        4,
-        3
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "j_fibonacci": {
-      "order": 31,
-      "count": 377,
-      "losses_by_key": {
-        "stake_gold": 9,
-        "stake_orange": 10,
-        "stake_green": 2,
-        "stake_black": 3,
-        "stake_white": 4,
-        "stake_blue": 2,
-        "stake_purple": 4
-      },
-      "losses": [
-        4,
-        null,
-        2,
-        3,
-        2,
-        4,
-        10,
-        9
-      ],
-      "wins_by_key": {
-        "stake_white": 5,
-        "stake_red": 1,
-        "stake_purple": 2
-      },
-      "wins": [
-        5,
-        1,
-        null,
-        null,
-        null,
-        2
-      ]
-    },
-    "j_rocket": {
-      "order": 74,
-      "count": 215,
-      "losses_by_key": {
-        "stake_gold": 7,
-        "stake_orange": 7,
-        "stake_green": 2,
-        "stake_black": 1,
-        "stake_white": 6,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        6,
-        null,
-        2,
-        1,
-        1,
-        3,
-        7,
-        7
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1
-      ]
-    },
-    "j_trousers": {
-      "order": 98,
-      "count": 313,
-      "losses_by_key": {
-        "stake_gold": 11,
-        "stake_orange": 7,
-        "stake_green": 1,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        3,
-        null,
-        1,
-        null,
-        2,
-        1,
-        7,
-        11
-      ],
-      "wins_by_key": {
-        "stake_black": 2,
-        "stake_white": 2,
         "stake_gold": 1
       },
-      "wins": [
-        2,
-        null,
-        null,
-        2,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_steel_joker": {
-      "order": 32,
-      "count": 44,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_red": 1
-      },
-      "losses": [
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ],
+      "count": 109,
       "wins_by_key": {
-        "stake_white": 2
-      },
-      "wins": [
-        2
-      ]
-    },
-    "j_ancient": {
-      "order": 99,
-      "count": 146,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 4,
-        "stake_green": 3,
-        "stake_white": 6,
-        "stake_red": 1,
-        "stake_purple": 4
-      },
-      "losses": [
-        6,
-        1,
-        3,
-        null,
-        null,
-        4,
-        4,
-        4
-      ],
-      "wins_by_key": {
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_todo_list": {
-      "order": 60,
-      "count": 111,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 4,
-        "stake_green": 2,
-        "stake_black": 2,
-        "stake_white": 4,
-        "stake_blue": 1,
-        "stake_purple": 5
-      },
-      "losses": [
-        4,
-        null,
-        2,
-        2,
-        1,
-        6,
-        4,
-        4
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_cartomancer": {
-      "order": 142,
-      "count": 137,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 5
-      },
-      "losses": [
-        5,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        4
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        1
-      ]
-    },
-    "j_card_sharp": {
-      "order": 62,
-      "count": 299,
-      "losses_by_key": {
-        "stake_gold": 7,
-        "stake_orange": 5,
-        "stake_green": 7,
-        "stake_black": 2,
-        "stake_white": 11,
-        "stake_blue": 1,
-        "stake_purple": 9
-      },
-      "losses": [
-        11,
-        null,
-        7,
-        2,
-        2,
-        9,
-        5,
-        7
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
         "stake_white": 2,
-        "stake_green": 1,
-        "stake_orange": 1
+        "stake_red": 1,
+        "stake_gold": 1
       },
+      "order": 150,
       "wins": [
         2,
+        1,
         null,
-        1,
-        1,
+        null,
+        null,
         null,
         null,
         1
-      ]
-    },
-    "j_red_card": {
-      "order": 63,
-      "count": 80,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_white": 1,
-        "stake_orange": 3,
-        "stake_purple": 3
-      },
-      "losses": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        3,
-        3,
-        2
       ],
-      "wins_by_key": {
-        "stake_green": 1
-      },
-      "wins": [
-        null,
-        null,
-        1
-      ]
-    },
-    "j_square": {
-      "order": 65,
-      "count": 350,
-      "losses_by_key": {
-        "stake_gold": 19,
-        "stake_orange": 11,
-        "stake_green": 7,
-        "stake_white": 5,
-        "stake_blue": 3,
-        "stake_purple": 3
-      },
       "losses": [
-        5,
         null,
-        7,
+        1,
+        1,
         null,
-        4,
+        null,
+        null,
         3,
-        11,
-        19
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_red": 1,
-        "stake_blue": 1
-      },
-      "wins": [
-        1,
-        1,
-        null,
-        1,
         1
       ]
     },
     "j_blueprint": {
-      "order": 123,
-      "count": 489,
       "losses_by_key": {
-        "stake_gold": 7,
+        "stake_purple": 6,
         "stake_orange": 11,
-        "stake_green": 2,
-        "stake_black": 2,
+        "stake_gold": 7,
         "stake_white": 6,
         "stake_blue": 1,
-        "stake_purple": 5
+        "stake_black": 2,
+        "stake_green": 2
       },
+      "count": 489,
+      "wins_by_key": {
+        "stake_red": 2,
+        "stake_purple": 2,
+        "stake_orange": 1,
+        "stake_gold": 2,
+        "stake_white": 5,
+        "stake_blue": 2,
+        "stake_black": 1
+      },
+      "order": 123,
+      "wins": [
+        5,
+        2,
+        null,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
       "losses": [
         6,
         null,
@@ -1387,278 +1018,31 @@
         6,
         11,
         7
-      ],
-      "wins_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 1,
-        "stake_red": 2,
-        "stake_black": 1,
-        "stake_white": 5,
-        "stake_blue": 2,
-        "stake_purple": 2
-      },
-      "wins": [
-        5,
-        2,
-        null,
-        1,
-        2,
-        2,
-        1,
-        2
-      ]
-    },
-    "j_caino": {
-      "order": 146,
-      "count": 64,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_white": 1,
-        "stake_orange": 1
-      },
-      "losses": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_ride_the_bus": {
-      "order": 44,
-      "count": 623,
-      "losses_by_key": {
-        "stake_gold": 21,
-        "stake_orange": 14,
-        "stake_green": 3,
-        "stake_black": 4,
-        "stake_white": 4,
-        "stake_blue": 2,
-        "stake_purple": 7
-      },
-      "losses": [
-        4,
-        null,
-        3,
-        4,
-        4,
-        9,
-        14,
-        21
-      ],
-      "wins_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        2
-      ]
-    },
-    "j_blackboard": {
-      "order": 48,
-      "count": 392,
-      "losses_by_key": {
-        "stake_gold": 8,
-        "stake_orange": 12,
-        "stake_green": 2,
-        "stake_white": 6,
-        "stake_blue": 1,
-        "stake_red": 3
-      },
-      "losses": [
-        6,
-        3,
-        2,
-        null,
-        2,
-        null,
-        12,
-        8
-      ],
-      "wins_by_key": {
-        "stake_orange": 2,
-        "stake_black": 1,
-        "stake_white": 4,
-        "stake_blue": 1,
-        "stake_red": 1
-      },
-      "wins": [
-        4,
-        1,
-        null,
-        1,
-        1,
-        null,
-        2
-      ]
-    },
-    "j_dna": {
-      "order": 51,
-      "count": 154,
-      "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 6,
-        "stake_green": 3,
-        "stake_black": 2,
-        "stake_white": 5,
-        "stake_red": 1,
-        "stake_purple": 6
-      },
-      "losses": [
-        5,
-        1,
-        3,
-        2,
-        null,
-        8,
-        6,
-        6
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_white": 1,
-        "stake_red": 2,
-        "stake_black": 1
-      },
-      "wins": [
-        1,
-        2,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_blue_joker": {
-      "order": 53,
-      "count": 612,
-      "losses_by_key": {
-        "stake_gold": 18,
-        "stake_orange": 12,
-        "stake_green": 9,
-        "stake_red": 3,
-        "stake_white": 8,
-        "stake_blue": 7,
-        "stake_purple": 8
-      },
-      "losses": [
-        8,
-        3,
-        9,
-        null,
-        7,
-        9,
-        12,
-        18
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_sixth_sense": {
-      "order": 54,
-      "count": 94,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 2,
-        "stake_green": 2,
-        "stake_white": 5,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        5,
-        null,
-        2,
-        null,
-        1,
-        3,
-        2,
-        1
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        1
       ]
     },
     "j_constellation": {
-      "order": 55,
-      "count": 649,
       "losses_by_key": {
-        "stake_gold": 8,
-        "stake_orange": 6,
-        "stake_green": 1,
         "stake_red": 3,
-        "stake_black": 1,
+        "stake_green": 1,
+        "stake_orange": 6,
+        "stake_gold": 8,
         "stake_white": 8,
-        "stake_blue": 2,
+        "stake_blue": 4,
+        "stake_black": 1,
         "stake_purple": 4
       },
-      "losses": [
-        8,
-        3,
-        1,
-        1,
-        4,
-        4,
-        6,
-        8
-      ],
+      "count": 649,
       "wins_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 1,
-        "stake_green": 3,
         "stake_red": 4,
-        "stake_black": 1,
+        "stake_green": 3,
+        "stake_orange": 1,
+        "stake_gold": 3,
         "stake_white": 7,
         "stake_blue": 3,
+        "stake_black": 1,
         "stake_purple": 1
       },
+      "order": 55,
       "wins": [
         7,
         4,
@@ -1668,21 +1052,46 @@
         1,
         1,
         3
+      ],
+      "losses": [
+        8,
+        3,
+        1,
+        1,
+        4,
+        4,
+        6,
+        8
       ]
     },
     "j_hiker": {
-      "order": 56,
-      "count": 259,
       "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 6,
-        "stake_green": 1,
         "stake_red": 2,
-        "stake_black": 2,
+        "stake_green": 1,
+        "stake_orange": 6,
+        "stake_gold": 6,
         "stake_white": 7,
-        "stake_blue": 4,
+        "stake_blue": 5,
+        "stake_black": 2,
         "stake_purple": 5
       },
+      "count": 261,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_purple": 1,
+        "stake_orange": 1,
+        "stake_black": 1
+      },
+      "order": 56,
+      "wins": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1
+      ],
       "losses": [
         7,
         2,
@@ -1692,32 +1101,27 @@
         5,
         6,
         6
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_orange": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1
       ]
     },
     "j_faceless": {
-      "order": 57,
-      "count": 150,
       "losses_by_key": {
-        "stake_black": 1,
-        "stake_gold": 2,
         "stake_red": 2,
-        "stake_green": 3
+        "stake_green": 3,
+        "stake_black": 1,
+        "stake_gold": 2
       },
+      "count": 150,
+      "wins_by_key": {
+        "stake_blue": 1
+      },
+      "order": 57,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
       "losses": [
         null,
         2,
@@ -1727,31 +1131,61 @@
         null,
         null,
         2
-      ],
-      "wins_by_key": {
-        "stake_blue": 1
+      ]
+    },
+    "j_flash": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_gold": 2
       },
+      "count": 89,
+      "wins_by_key": {
+        "stake_red": 1
+      },
+      "order": 96,
       "wins": [
         null,
-        null,
-        null,
-        null,
         1
+      ],
+      "losses": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        4
       ]
     },
     "j_green_joker": {
-      "order": 58,
-      "count": 602,
       "losses_by_key": {
-        "stake_gold": 22,
-        "stake_orange": 20,
-        "stake_green": 3,
         "stake_red": 1,
-        "stake_black": 3,
+        "stake_green": 3,
+        "stake_orange": 20,
+        "stake_gold": 22,
         "stake_white": 3,
         "stake_blue": 7,
-        "stake_purple": 13
+        "stake_black": 3,
+        "stake_purple": 15
       },
+      "count": 650,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
+        "stake_black": 1,
+        "stake_blue": 2
+      },
+      "order": 58,
+      "wins": [
+        null,
+        1,
+        null,
+        1,
+        2,
+        1,
+        1
+      ],
       "losses": [
         3,
         1,
@@ -1760,32 +1194,81 @@
         7,
         15,
         20,
-        22
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_red": 1,
-        "stake_blue": 2
+        25
+      ]
+    },
+    "j_popcorn": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 1,
+        "stake_gold": 4,
+        "stake_blue": 1,
+        "stake_green": 1
       },
-      "wins": [
+      "count": 150,
+      "wins_by_key": {},
+      "order": 97,
+      "wins": {},
+      "losses": [
+        null,
         null,
         1,
         null,
         1,
         2,
+        1,
+        4
+      ]
+    },
+    "j_trousers": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 7,
+        "stake_gold": 11,
+        "stake_white": 3,
+        "stake_blue": 2,
+        "stake_green": 1
+      },
+      "count": 346,
+      "wins_by_key": {
+        "stake_white": 2,
+        "stake_black": 2,
+        "stake_gold": 1
+      },
+      "order": 98,
+      "wins": [
+        2,
+        null,
+        null,
+        2,
+        null,
+        null,
+        1,
         1
+      ],
+      "losses": [
+        3,
+        null,
+        1,
+        null,
+        2,
+        1,
+        7,
+        13
       ]
     },
     "j_superposition": {
-      "order": 59,
-      "count": 28,
       "losses_by_key": {
+        "stake_purple": 2,
         "stake_orange": 2,
-        "stake_black": 1,
         "stake_white": 1,
         "stake_blue": 1,
-        "stake_purple": 1
+        "stake_black": 1
       },
+      "count": 28,
+      "wins_by_key": {},
+      "order": 59,
+      "wins": {},
       "losses": [
         1,
         null,
@@ -1794,35 +1277,117 @@
         1,
         2,
         2
-      ],
-      "wins_by_key": {},
-      "wins": {}
+      ]
     },
-    "j_cavendish": {
-      "order": 61,
-      "count": 133,
+    "j_ancient": {
       "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 2,
-        "stake_green": 1,
-        "stake_black": 1,
+        "stake_red": 1,
+        "stake_purple": 4,
+        "stake_orange": 4,
+        "stake_gold": 4,
+        "stake_white": 6,
+        "stake_green": 3
+      },
+      "count": 146,
+      "wins_by_key": {
+        "stake_purple": 1,
         "stake_blue": 1
       },
+      "order": 99,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ],
       "losses": [
+        6,
+        1,
+        3,
         null,
         null,
-        1,
-        1,
-        1,
+        4,
+        4,
+        4
+      ]
+    },
+    "j_todo_list": {
+      "losses_by_key": {
+        "stake_purple": 6,
+        "stake_orange": 6,
+        "stake_gold": 4,
+        "stake_white": 4,
+        "stake_blue": 1,
+        "stake_black": 2,
+        "stake_green": 2
+      },
+      "count": 115,
+      "wins_by_key": {},
+      "order": 60,
+      "wins": {},
+      "losses": [
+        4,
         null,
         2,
-        2
-      ],
+        2,
+        1,
+        6,
+        6,
+        5
+      ]
+    },
+    "j_ramen": {
+      "losses_by_key": {
+        "stake_purple": 7,
+        "stake_orange": 2,
+        "stake_gold": 4,
+        "stake_white": 4,
+        "stake_green": 4
+      },
+      "count": 269,
       "wins_by_key": {
         "stake_white": 2,
-        "stake_orange": 1,
-        "stake_purple": 1
+        "stake_purple": 3,
+        "stake_orange": 1
       },
+      "order": 100,
+      "wins": [
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1
+      ],
+      "losses": [
+        4,
+        null,
+        4,
+        null,
+        null,
+        7,
+        2,
+        5
+      ]
+    },
+    "j_cavendish": {
+      "losses_by_key": {
+        "stake_green": 1,
+        "stake_orange": 2,
+        "stake_gold": 2,
+        "stake_blue": 1,
+        "stake_black": 1
+      },
+      "count": 136,
+      "wins_by_key": {
+        "stake_white": 2,
+        "stake_purple": 1,
+        "stake_orange": 1
+      },
+      "order": 61,
       "wins": [
         2,
         null,
@@ -1831,17 +1396,191 @@
         null,
         1,
         1
+      ],
+      "losses": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        2,
+        3
+      ]
+    },
+    "j_selzer": {
+      "losses_by_key": {
+        "stake_white": 1,
+        "stake_orange": 2,
+        "stake_gold": 1
+      },
+      "count": 81,
+      "wins_by_key": {
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_orange": 1
+      },
+      "order": 102,
+      "wins": [
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1
+      ]
+    },
+    "j_card_sharp": {
+      "losses_by_key": {
+        "stake_purple": 9,
+        "stake_orange": 5,
+        "stake_gold": 7,
+        "stake_white": 11,
+        "stake_blue": 2,
+        "stake_black": 2,
+        "stake_green": 7
+      },
+      "count": 299,
+      "wins_by_key": {
+        "stake_white": 2,
+        "stake_green": 1,
+        "stake_black": 1,
+        "stake_orange": 1
+      },
+      "order": 62,
+      "wins": [
+        2,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        11,
+        null,
+        7,
+        2,
+        2,
+        9,
+        5,
+        8
+      ]
+    },
+    "j_castle": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 3,
+        "stake_orange": 6,
+        "stake_gold": 6,
+        "stake_white": 1,
+        "stake_blue": 1
+      },
+      "count": 230,
+      "wins_by_key": {
+        "stake_red": 2,
+        "stake_white": 3
+      },
+      "order": 103,
+      "wins": [
+        3,
+        2
+      ],
+      "losses": [
+        1,
+        1,
+        3,
+        null,
+        1,
+        null,
+        6,
+        7
+      ]
+    },
+    "j_red_card": {
+      "losses_by_key": {
+        "stake_white": 1,
+        "stake_purple": 3,
+        "stake_orange": 3,
+        "stake_gold": 2
+      },
+      "count": 92,
+      "wins_by_key": {
+        "stake_green": 1
+      },
+      "order": 63,
+      "wins": [
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        3,
+        2
+      ]
+    },
+    "j_smiley": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 7,
+        "stake_orange": 10,
+        "stake_gold": 10,
+        "stake_white": 9,
+        "stake_blue": 1,
+        "stake_black": 3
+      },
+      "count": 293,
+      "wins_by_key": {},
+      "order": 104,
+      "wins": {},
+      "losses": [
+        9,
+        1,
+        null,
+        3,
+        1,
+        7,
+        10,
+        10
       ]
     },
     "j_madness": {
-      "order": 64,
-      "count": 124,
       "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 2,
+        "stake_purple": 1,
         "stake_green": 2,
-        "stake_purple": 1
+        "stake_orange": 2,
+        "stake_gold": 3
       },
+      "count": 124,
+      "wins_by_key": {
+        "stake_black": 2,
+        "stake_white": 1
+      },
+      "order": 64,
+      "wins": [
+        1,
+        null,
+        null,
+        2
+      ],
       "losses": [
         null,
         null,
@@ -1851,59 +1590,43 @@
         1,
         2,
         3
-      ],
-      "wins_by_key": {
-        "stake_black": 2,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        2
       ]
     },
-    "j_vampire": {
-      "order": 68,
-      "count": 165,
+    "j_campfire": {
       "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 5,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 2
+        "stake_white": 1,
+        "stake_purple": 2,
+        "stake_orange": 2,
+        "stake_gold": 2
       },
+      "count": 48,
+      "wins_by_key": {},
+      "order": 105,
+      "wins": {},
       "losses": [
-        3,
-        null,
-        null,
-        null,
         1,
+        null,
+        null,
+        null,
+        null,
         2,
-        5,
-        6
-      ],
-      "wins_by_key": {
-        "stake_green": 2,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        2
+        2,
+        3
       ]
     },
     "j_joker": {
-      "order": 1,
-      "count": 203,
       "losses_by_key": {
-        "stake_gold": 4,
+        "stake_purple": 1,
         "stake_orange": 2,
-        "stake_green": 2,
+        "stake_gold": 4,
         "stake_white": 4,
         "stake_blue": 1,
-        "stake_purple": 1
+        "stake_green": 2
       },
+      "count": 207,
+      "wins_by_key": {},
+      "order": 1,
+      "wins": {},
       "losses": [
         4,
         null,
@@ -1913,1034 +1636,508 @@
         1,
         2,
         4
-      ],
-      "wins_by_key": {},
-      "wins": {}
+      ]
     },
-    "j_baron": {
-      "order": 72,
-      "count": 214,
+    "j_mr_bones": {
+      "losses_by_key": {},
+      "count": 38,
+      "wins_by_key": {},
+      "order": 107,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": {}
+    },
+    "j_greedy_joker": {
       "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 7,
-        "stake_green": 2,
-        "stake_white": 3,
-        "stake_red": 2,
-        "stake_purple": 1
+        "stake_purple": 1,
+        "stake_orange": 2,
+        "stake_white": 6,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_green": 1
       },
+      "count": 83,
+      "wins_by_key": {
+        "stake_orange": 1
+      },
+      "order": 2,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
       "losses": [
+        6,
+        null,
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    "j_abstract": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 5,
+        "stake_orange": 9,
+        "stake_gold": 12,
+        "stake_white": 14,
+        "stake_blue": 7,
+        "stake_black": 1,
+        "stake_purple": 8
+      },
+      "count": 768,
+      "wins_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 6,
+        "stake_blue": 3,
+        "stake_green": 2
+      },
+      "order": 34,
+      "wins": [
+        6,
+        null,
+        2,
+        null,
         3,
-        2,
-        2,
-        null,
-        null,
+        3,
+        1,
+        1
+      ],
+      "losses": [
+        14,
+        1,
+        5,
         1,
         7,
-        5
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_green": 1,
-        "stake_orange": 1
-      },
-      "wins": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_midas_mask": {
-      "order": 76,
-      "count": 162,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 5,
-        "stake_green": 2,
-        "stake_white": 9,
-        "stake_red": 2,
-        "stake_purple": 1
-      },
-      "losses": [
-        9,
-        2,
-        2,
-        null,
-        null,
-        2,
-        5,
-        4
-      ],
-      "wins_by_key": {
-        "stake_white": 3
-      },
-      "wins": [
-        3
-      ]
-    },
-    "j_troubadour": {
-      "order": 111,
-      "count": 33,
-      "losses_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_gold": 3
-      },
-      "losses": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        3
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_photograph": {
-      "order": 78,
-      "count": 221,
-      "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 4,
-        "stake_green": 3,
-        "stake_red": 1,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        3,
-        1,
-        3,
-        null,
-        2,
-        2,
-        4,
-        6
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_orange": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_gift": {
-      "order": 79,
-      "count": 95,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 5,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 4,
-        "stake_blue": 2,
-        "stake_purple": 1
-      },
-      "losses": [
-        4,
-        1,
-        1,
-        1,
-        2,
-        1,
-        5,
-        4
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "j_turtle_bean": {
-      "order": 80,
-      "count": 55,
-      "losses_by_key": {
-        "stake_purple": 2,
-        "stake_orange": 1
-      },
-      "losses": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        2,
-        1
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "j_zany": {
-      "order": 7,
-      "count": 247,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_white": 5,
-        "stake_orange": 2,
-        "stake_purple": 7
-      },
-      "losses": [
-        5,
-        null,
-        null,
-        null,
-        null,
         8,
-        2,
-        5
-      ],
+        9,
+        12
+      ]
+    },
+    "j_acrobat": {
+      "losses_by_key": {
+        "stake_purple": 4,
+        "stake_orange": 6,
+        "stake_gold": 5,
+        "stake_white": 4,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_green": 2
+      },
+      "count": 156,
       "wins_by_key": {
         "stake_white": 1,
         "stake_green": 1,
+        "stake_gold": 1
+      },
+      "order": 108,
+      "wins": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        4,
+        null,
+        2,
+        1,
+        1,
+        4,
+        6,
+        5
+      ]
+    },
+    "j_walkie_talkie": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_green": 5,
+        "stake_orange": 9,
+        "stake_gold": 8,
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 3,
+        "stake_purple": 3
+      },
+      "count": 338,
+      "wins_by_key": {
+        "stake_black": 2,
+        "stake_white": 1
+      },
+      "order": 101,
+      "wins": [
+        1,
+        null,
+        null,
+        2
+      ],
+      "losses": [
+        1,
+        2,
+        5,
+        3,
+        1,
+        3,
+        9,
+        8
+      ]
+    },
+    "j_sock_and_buskin": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 2,
+        "stake_orange": 5,
+        "stake_gold": 2,
+        "stake_white": 4,
+        "stake_blue": 3,
+        "stake_green": 4
+      },
+      "count": 112,
+      "wins_by_key": {},
+      "order": 109,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        4,
+        1,
+        4,
+        null,
+        3,
+        2,
+        5,
+        2
+      ]
+    },
+    "j_gluttenous_joker": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 4,
+        "stake_gold": 2,
+        "stake_white": 3,
         "stake_blue": 1
       },
+      "count": 140,
+      "wins_by_key": {
+        "stake_orange": 1,
+        "stake_white": 1
+      },
+      "order": 5,
       "wins": [
         1,
         null,
-        1,
+        null,
+        null,
+        null,
         null,
         1
+      ],
+      "losses": [
+        3,
+        null,
+        null,
+        null,
+        1,
+        1,
+        4,
+        4
       ]
     },
-    "j_erosion": {
-      "order": 81,
-      "count": 279,
+    "j_hack": {
       "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 7,
-        "stake_black": 1,
-        "stake_white": 4,
-        "stake_blue": 1,
+        "stake_red": 2,
+        "stake_green": 5,
+        "stake_orange": 6,
+        "stake_gold": 6,
+        "stake_white": 1,
+        "stake_blue": 3,
+        "stake_black": 4,
         "stake_purple": 6
       },
-      "losses": [
-        4,
-        null,
-        null,
-        1,
-        2,
-        6,
-        7,
-        2
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_green": 1,
-        "stake_white": 3,
-        "stake_blue": 2,
-        "stake_red": 1
-      },
-      "wins": [
-        3,
-        1,
-        1,
-        null,
-        2,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_sly": {
-      "order": 11,
-      "count": 190,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 3,
-        "stake_green": 1,
-        "stake_white": 2,
-        "stake_blue": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        2,
-        null,
-        1,
-        null,
-        1,
-        3,
-        3,
-        4
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_reserved_parking": {
-      "order": 82,
-      "count": 71,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_white": 1,
-        "stake_green": 2,
-        "stake_orange": 3
-      },
-      "losses": [
-        1,
-        null,
-        2,
-        null,
-        null,
-        null,
-        3,
-        1
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "j_crazy": {
-      "order": 9,
-      "count": 87,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 3,
-        "stake_black": 1,
-        "stake_white": 9,
-        "stake_red": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        9,
-        1,
-        null,
-        1,
-        null,
-        1,
-        3,
-        2
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_juggler": {
-      "order": 87,
-      "count": 145,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 3,
-        "stake_green": 1,
-        "stake_white": 2,
-        "stake_purple": 1
-      },
-      "losses": [
-        2,
-        null,
-        1,
-        null,
-        1,
-        1,
-        3,
-        5
-      ],
-      "wins_by_key": {
-        "stake_blue": 2,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        2
-      ]
-    },
-    "j_droll": {
-      "order": 10,
-      "count": 144,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_white": 5,
-        "stake_blue": 1,
-        "stake_orange": 8
-      },
-      "losses": [
-        5,
-        null,
-        null,
-        null,
-        1,
-        1,
-        8,
-        5
-      ],
-      "wins_by_key": {
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_drunkard": {
-      "order": 88,
-      "count": 57,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 2,
-        "stake_white": 1,
-        "stake_red": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        1,
-        1,
-        null,
-        null,
-        null,
-        2,
-        2,
-        1
-      ],
+      "count": 204,
       "wins_by_key": {
         "stake_gold": 1
       },
+      "order": 36,
       "wins": [
         null,
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_stone": {
-      "order": 89,
-      "count": 43,
-      "losses_by_key": {
-        "stake_black": 1
-      },
-      "losses": [
         null,
         null,
         null,
         1
       ],
-      "wins_by_key": {
-        "stake_white": 2,
-        "stake_orange": 1
-      },
-      "wins": [
-        2,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_stencil": {
-      "order": 17,
-      "count": 287,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 11,
-        "stake_green": 2,
-        "stake_white": 4,
-        "stake_red": 1,
-        "stake_purple": 2
-      },
       "losses": [
-        4,
         1,
         2,
-        null,
-        1,
-        2,
-        11,
-        4
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_orange": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_golden": {
-      "order": 90,
-      "count": 302,
-      "losses_by_key": {
-        "stake_gold": 14,
-        "stake_orange": 9,
-        "stake_green": 5,
-        "stake_black": 2,
-        "stake_white": 7,
-        "stake_blue": 3,
-        "stake_purple": 2
-      },
-      "losses": [
-        7,
-        null,
         5,
-        2,
+        4,
         3,
-        3,
-        9,
-        14
-      ],
-      "wins_by_key": {},
-      "wins": {}
+        6,
+        6,
+        6
+      ]
     },
-    "j_four_fingers": {
-      "order": 18,
-      "count": 137,
+    "j_jolly": {
       "losses_by_key": {
-        "stake_gold": 7,
-        "stake_orange": 6,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 6,
-        "stake_blue": 2,
+        "stake_purple": 3,
+        "stake_orange": 2,
+        "stake_gold": 9,
+        "stake_white": 3,
+        "stake_blue": 1
+      },
+      "count": 194,
+      "wins_by_key": {
+        "stake_white": 1,
         "stake_purple": 2
       },
-      "losses": [
-        6,
-        1,
-        1,
-        1,
-        2,
-        2,
-        6,
-        7
-      ],
-      "wins_by_key": {
-        "stake_blue": 1,
-        "stake_white": 1
-      },
+      "order": 6,
       "wins": [
         1,
         null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_credit_card": {
-      "order": 20,
-      "count": 85,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_white": 4,
-        "stake_green": 2,
-        "stake_black": 1
-      },
-      "losses": [
-        4,
-        null,
-        2,
-        1,
         null,
         null,
         null,
         2
       ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_crafty": {
-      "order": 15,
-      "count": 153,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 3,
-        "stake_black": 1,
-        "stake_white": 3,
-        "stake_purple": 2
-      },
       "losses": [
         3,
         null,
         null,
-        1,
         null,
-        2,
+        1,
         3,
-        1
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_white": 1,
-        "stake_purple": 1
+        2,
+        9
+      ]
+    },
+    "j_zany": {
+      "losses_by_key": {
+        "stake_white": 5,
+        "stake_purple": 8,
+        "stake_orange": 2,
+        "stake_gold": 5
       },
+      "count": 256,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_green": 1
+      },
+      "order": 7,
       "wins": [
         1,
         null,
-        null,
-        null,
-        null,
         1,
         null,
         1
-      ]
-    },
-    "j_half": {
-      "order": 16,
-      "count": 457,
-      "losses_by_key": {
-        "stake_gold": 8,
-        "stake_orange": 16,
-        "stake_green": 2,
-        "stake_red": 1,
-        "stake_white": 8,
-        "stake_blue": 2,
-        "stake_purple": 6
-      },
+      ],
       "losses": [
+        5,
+        null,
+        null,
+        null,
+        null,
         8,
-        1,
         2,
-        null,
-        2,
-        7,
-        16,
-        8
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_red": 1,
-        "stake_blue": 1
-      },
-      "wins": [
-        1,
-        1,
-        null,
-        null,
-        1
+        5
       ]
     },
-    "j_supernova": {
-      "order": 43,
-      "count": 352,
+    "j_mad": {
       "losses_by_key": {
-        "stake_gold": 12,
-        "stake_orange": 13,
-        "stake_green": 2,
-        "stake_black": 2,
-        "stake_white": 9,
-        "stake_blue": 4,
-        "stake_purple": 5
+        "stake_purple": 1,
+        "stake_orange": 3,
+        "stake_gold": 5,
+        "stake_white": 4,
+        "stake_blue": 2
       },
+      "count": 140,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
+        "stake_black": 1
+      },
+      "order": 8,
+      "wins": [
+        null,
+        1,
+        null,
+        1,
+        null,
+        1
+      ],
       "losses": [
-        9,
+        4,
+        null,
+        null,
         null,
         2,
+        1,
+        3,
+        5
+      ]
+    },
+    "j_gros_michel": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_purple": 5,
+        "stake_orange": 13,
+        "stake_gold": 12,
+        "stake_white": 3,
+        "stake_blue": 2,
+        "stake_green": 3
+      },
+      "count": 657,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_green": 1
+      },
+      "order": 38,
+      "wins": [
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        3,
         2,
-        4,
+        3,
+        null,
+        2,
         5,
         13,
         12
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1
       ]
     },
-    "j_loyalty_card": {
-      "order": 25,
-      "count": 54,
+    "j_even_steven": {
       "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 6,
         "stake_gold": 3,
-        "stake_white": 4,
-        "stake_orange": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        4,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        3
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_bloodstone": {
-      "order": 117,
-      "count": 215,
-      "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 11,
-        "stake_green": 3,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        1,
-        null,
-        3,
-        1,
-        1,
-        1,
-        11,
-        6
-      ],
-      "wins_by_key": {
-        "stake_red": 1,
-        "stake_green": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        1,
-        1,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_trio": {
-      "order": 132,
-      "count": 263,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 5,
-        "stake_green": 4,
-        "stake_red": 2,
-        "stake_black": 1,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        3,
-        2,
-        4,
-        1,
-        2,
-        4,
-        5,
-        3
-      ],
-      "wins_by_key": {
-        "stake_blue": 3,
-        "stake_white": 2,
-        "stake_red": 1,
-        "stake_green": 1
-      },
-      "wins": [
-        2,
-        1,
-        1,
-        null,
-        3,
-        1
-      ]
-    },
-    "j_greedy_joker": {
-      "order": 2,
-      "count": 83,
-      "losses_by_key": {
-        "stake_orange": 2,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 6,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        6,
-        null,
-        1,
-        1,
-        1,
-        1,
-        2
-      ],
-      "wins_by_key": {
-        "stake_orange": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_brainstorm": {
-      "order": 138,
-      "count": 295,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 2,
-        "stake_green": 1,
-        "stake_red": 2,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 2,
-        "stake_purple": 6
-      },
-      "losses": [
-        1,
-        2,
-        1,
-        1,
-        2,
-        8,
-        2,
-        5
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_red": 2,
-        "stake_blue": 1
-      },
-      "wins": [
-        null,
-        2,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_lucky_cat": {
-      "order": 91,
-      "count": 61,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 3,
-        "stake_black": 2,
-        "stake_purple": 1
-      },
-      "losses": [
-        null,
-        null,
-        null,
-        2,
-        null,
-        1,
-        3,
-        1
-      ],
-      "wins_by_key": {
-        "stake_black": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_business": {
-      "order": 42,
-      "count": 182,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 2,
-        "stake_green": 2,
-        "stake_red": 1,
-        "stake_white": 5,
-        "stake_blue": 1,
-        "stake_purple": 4
-      },
-      "losses": [
-        5,
-        1,
-        2,
-        null,
-        1,
-        4,
-        2,
-        2
-      ],
-      "wins_by_key": {
-        "stake_black": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_baseball": {
-      "order": 92,
-      "count": 379,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 5,
-        "stake_black": 1,
-        "stake_white": 4,
-        "stake_purple": 2
-      },
-      "losses": [
-        4,
-        null,
-        null,
-        1,
-        2,
-        2,
-        5,
-        5
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 2,
-        "stake_green": 1,
-        "stake_red": 2,
-        "stake_black": 1,
         "stake_white": 7,
         "stake_blue": 1,
-        "stake_purple": 2
+        "stake_green": 1
       },
+      "count": 252,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
+        "stake_gold": 1
+      },
+      "order": 39,
       "wins": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1
+      ],
+      "losses": [
         7,
-        2,
-        1,
-        1,
-        1,
-        2,
-        2,
-        1
-      ]
-    },
-    "j_arrowhead": {
-      "order": 118,
-      "count": 243,
-      "losses_by_key": {
-        "stake_gold": 7,
-        "stake_orange": 10,
-        "stake_blue": 1,
-        "stake_purple": 9
-      },
-      "losses": [
-        null,
-        null,
-        null,
-        null,
-        1,
-        9,
-        10,
-        7
-      ],
-      "wins_by_key": {
-        "stake_green": 1,
-        "stake_orange": 2
-      },
-      "wins": [
-        null,
         null,
         1,
         null,
-        null,
-        null,
-        2
-      ]
-    },
-    "j_hanging_chad": {
-      "order": 115,
-      "count": 685,
-      "losses_by_key": {
-        "stake_gold": 9,
-        "stake_orange": 11,
-        "stake_green": 3,
-        "stake_red": 2,
-        "stake_black": 1,
-        "stake_white": 8,
-        "stake_blue": 4,
-        "stake_purple": 10
-      },
-      "losses": [
-        8,
-        2,
+        1,
         3,
-        1,
-        5,
-        12,
-        11,
-        9
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_green": 5,
+        6,
+        4
+      ]
+    },
+    "j_odd_todd": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 4,
+        "stake_orange": 7,
+        "stake_gold": 8,
+        "stake_white": 9,
+        "stake_blue": 4,
         "stake_black": 1,
-        "stake_red": 4,
-        "stake_purple": 1
+        "stake_purple": 11
       },
+      "count": 420,
+      "wins_by_key": {
+        "stake_green": 2
+      },
+      "order": 40,
       "wins": [
         null,
-        4,
-        5,
-        1,
         null,
-        1,
+        2,
+        null,
+        null,
         null,
         1
+      ],
+      "losses": [
+        9,
+        1,
+        4,
+        1,
+        4,
+        11,
+        7,
+        10
       ]
     },
     "j_scholar": {
-      "order": 41,
-      "count": 657,
       "losses_by_key": {
-        "stake_gold": 15,
-        "stake_orange": 15,
-        "stake_green": 4,
         "stake_red": 2,
-        "stake_black": 1,
+        "stake_green": 4,
+        "stake_orange": 15,
+        "stake_gold": 15,
         "stake_white": 12,
         "stake_blue": 3,
+        "stake_black": 1,
         "stake_purple": 9
       },
+      "count": 657,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_white": 4
+      },
+      "order": 41,
+      "wins": [
+        4,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1
+      ],
       "losses": [
         12,
         2,
@@ -2950,953 +2147,24 @@
         9,
         15,
         15
-      ],
-      "wins_by_key": {
-        "stake_orange": 1,
-        "stake_white": 4,
-        "stake_red": 1,
-        "stake_green": 1
-      },
-      "wins": [
-        4,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_wrathful_joker": {
-      "order": 4,
-      "count": 233,
-      "losses_by_key": {
-        "stake_gold": 7,
-        "stake_orange": 6,
-        "stake_green": 2,
-        "stake_white": 6,
-        "stake_blue": 1,
-        "stake_purple": 4
-      },
-      "losses": [
-        6,
-        null,
-        2,
-        null,
-        1,
-        5,
-        6,
-        7
-      ],
-      "wins_by_key": {
-        "stake_orange": 1,
-        "stake_white": 2,
-        "stake_red": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        2,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_mystic_summit": {
-      "order": 23,
-      "count": 262,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 8,
-        "stake_green": 1,
-        "stake_white": 2,
-        "stake_blue": 2,
-        "stake_purple": 3
-      },
-      "losses": [
-        2,
-        null,
-        1,
-        null,
-        2,
-        3,
-        8,
-        3
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        1,
-        null,
-        1
-      ]
-    },
-    "j_hit_the_road": {
-      "order": 130,
-      "count": 47,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_green": 3,
-        "stake_black": 1,
-        "stake_white": 2,
-        "stake_red": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        2,
-        1,
-        3,
-        1,
-        null,
-        2,
-        null,
-        1
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "j_marble": {
-      "order": 24,
-      "count": 63,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 1,
-        "stake_black": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        2
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_odd_todd": {
-      "order": 40,
-      "count": 378,
-      "losses_by_key": {
-        "stake_gold": 8,
-        "stake_orange": 6,
-        "stake_green": 4,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 9,
-        "stake_blue": 3,
-        "stake_purple": 9
-      },
-      "losses": [
-        9,
-        1,
-        4,
-        1,
-        4,
-        11,
-        6,
-        8
-      ],
-      "wins_by_key": {
-        "stake_green": 2
-      },
-      "wins": [
-        null,
-        null,
-        2
-      ]
-    },
-    "j_lusty_joker": {
-      "order": 3,
-      "count": 285,
-      "losses_by_key": {
-        "stake_gold": 9,
-        "stake_orange": 11,
-        "stake_green": 2,
-        "stake_black": 1,
-        "stake_white": 4,
-        "stake_blue": 2,
-        "stake_purple": 2
-      },
-      "losses": [
-        4,
-        null,
-        2,
-        1,
-        2,
-        2,
-        11,
-        9
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_matador": {
-      "order": 129,
-      "count": 34,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_green": 1
-      },
-      "losses": [
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_even_steven": {
-      "order": 39,
-      "count": 246,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 6,
-        "stake_green": 1,
-        "stake_white": 7,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        7,
-        null,
-        1,
-        null,
-        1,
-        3,
-        6,
-        3
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_red": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1
-      ]
-    },
-    "j_wee": {
-      "order": 124,
-      "count": 44,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 2,
-        "stake_green": 1,
-        "stake_white": 2,
-        "stake_blue": 1
-      },
-      "losses": [
-        2,
-        null,
-        1,
-        null,
-        1,
-        null,
-        2,
-        1
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "j_splash": {
-      "order": 52,
-      "count": 230,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 6,
-        "stake_green": 2,
-        "stake_white": 3,
-        "stake_red": 1,
-        "stake_purple": 7
-      },
-      "losses": [
-        3,
-        1,
-        2,
-        null,
-        null,
-        7,
-        6,
-        4
-      ],
-      "wins_by_key": {
-        "stake_white": 2
-      },
-      "wins": [
-        2
-      ]
-    },
-    "j_vagabond": {
-      "order": 71,
-      "count": 126,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 2,
-        "stake_red": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        2,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        3
-      ],
-      "wins_by_key": {
-        "stake_green": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        1
-      ]
-    },
-    "j_seeing_double": {
-      "order": 128,
-      "count": 100,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        3
-      ],
-      "wins_by_key": {
-        "stake_green": 1,
-        "stake_orange": 1
-      },
-      "wins": [
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_merry_andy": {
-      "order": 125,
-      "count": 40,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_black": 1
-      },
-      "losses": [
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_certificate": {
-      "order": 112,
-      "count": 180,
-      "losses_by_key": {
-        "stake_gold": 7,
-        "stake_orange": 4,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        4,
-        7
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_orange": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_oops": {
-      "order": 126,
-      "count": 74,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_white": 2,
-        "stake_orange": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        2,
-        null,
-        null,
-        null,
-        null,
-        2,
-        1,
-        5
-      ],
-      "wins_by_key": {
-        "stake_gold": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_raised_fist": {
-      "order": 29,
-      "count": 359,
-      "losses_by_key": {
-        "stake_gold": 10,
-        "stake_orange": 12,
-        "stake_green": 1,
-        "stake_white": 2,
-        "stake_blue": 1,
-        "stake_purple": 9
-      },
-      "losses": [
-        2,
-        null,
-        1,
-        null,
-        1,
-        9,
-        12,
-        10
-      ],
-      "wins_by_key": {
-        "stake_red": 1
-      },
-      "wins": [
-        null,
-        1
-      ]
-    },
-    "j_idol": {
-      "order": 127,
-      "count": 173,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 4,
-        "stake_red": 2,
-        "stake_black": 1,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        3,
-        2,
-        null,
-        1,
-        1,
-        2,
-        4,
-        3
-      ],
-      "wins_by_key": {
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 2,
-        "stake_red": 1
-      },
-      "wins": [
-        1,
-        1,
-        1,
-        1,
-        2
-      ]
-    },
-    "j_hack": {
-      "order": 36,
-      "count": 204,
-      "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 6,
-        "stake_green": 5,
-        "stake_red": 2,
-        "stake_black": 4,
-        "stake_white": 1,
-        "stake_blue": 3,
-        "stake_purple": 5
-      },
-      "losses": [
-        1,
-        2,
-        5,
-        4,
-        3,
-        6,
-        6,
-        6
-      ],
-      "wins_by_key": {
-        "stake_gold": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_delayed_grat": {
-      "order": 35,
-      "count": 146,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 3,
-        "stake_green": 1,
-        "stake_white": 4,
-        "stake_blue": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        4,
-        null,
-        1,
-        null,
-        3,
-        2,
-        3,
-        3
-      ],
-      "wins_by_key": {
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_riff_raff": {
-      "order": 67,
-      "count": 140,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 5,
-        "stake_green": 1,
-        "stake_white": 3,
-        "stake_purple": 2
-      },
-      "losses": [
-        3,
-        null,
-        1,
-        null,
-        null,
-        2,
-        5,
-        3
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_abstract": {
-      "order": 34,
-      "count": 764,
-      "losses_by_key": {
-        "stake_gold": 12,
-        "stake_orange": 9,
-        "stake_green": 5,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 14,
-        "stake_blue": 7,
-        "stake_purple": 8
-      },
-      "losses": [
-        14,
-        1,
-        5,
-        1,
-        7,
-        8,
-        9,
-        12
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 2,
-        "stake_white": 6,
-        "stake_blue": 2,
-        "stake_purple": 3
-      },
-      "wins": [
-        6,
-        null,
-        2,
-        null,
-        3,
-        3,
-        1,
-        1
-      ]
-    },
-    "j_gluttenous_joker": {
-      "order": 5,
-      "count": 130,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 4,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        3,
-        null,
-        null,
-        null,
-        1,
-        1,
-        4,
-        2
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_orange": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_ticket": {
-      "order": 106,
-      "count": 3,
-      "losses_by_key": {
-        "stake_green": 1
-      },
-      "losses": [
-        null,
-        null,
-        1
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_pareidolia": {
-      "order": 37,
-      "count": 194,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 5,
-        "stake_green": 1,
-        "stake_red": 2,
-        "stake_black": 1,
-        "stake_white": 2,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        2,
-        2,
-        1,
-        1,
-        1,
-        4,
-        5,
-        4
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_green": 1
-      },
-      "wins": [
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_glass": {
-      "order": 120,
-      "count": 6,
-      "losses_by_key": {
-        "stake_red": 1
-      },
-      "losses": [
-        null,
-        1,
-        null,
-        null,
-        1
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_onyx_agate": {
-      "order": 119,
-      "count": 262,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 3,
-        "stake_green": 1,
-        "stake_black": 2,
-        "stake_white": 2,
-        "stake_blue": 2,
-        "stake_purple": 4
-      },
-      "losses": [
-        2,
-        null,
-        1,
-        2,
-        3,
-        6,
-        3,
-        2
-      ],
-      "wins_by_key": {
-        "stake_white": 2,
-        "stake_red": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        2,
-        1,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_gros_michel": {
-      "order": 38,
-      "count": 621,
-      "losses_by_key": {
-        "stake_gold": 12,
-        "stake_orange": 13,
-        "stake_green": 3,
-        "stake_red": 2,
-        "stake_white": 3,
-        "stake_blue": 2,
-        "stake_purple": 4
-      },
-      "losses": [
-        3,
-        2,
-        3,
-        null,
-        2,
-        5,
-        13,
-        12
-      ],
-      "wins_by_key": {
-        "stake_green": 1,
-        "stake_white": 1
-      },
-      "wins": [
-        1,
-        null,
-        1
-      ]
-    },
-    "j_shortcut": {
-      "order": 69,
-      "count": 146,
-      "losses_by_key": {
-        "stake_black": 1,
-        "stake_white": 2,
-        "stake_gold": 3,
-        "stake_purple": 1
-      },
-      "losses": [
-        2,
-        null,
-        null,
-        1,
-        null,
-        2,
-        null,
-        3
-      ],
-      "wins_by_key": {
-        "stake_blue": 1,
-        "stake_white": 3
-      },
-      "wins": [
-        3,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_duo": {
-      "order": 131,
-      "count": 249,
-      "losses_by_key": {
-        "stake_gold": 9,
-        "stake_orange": 7,
-        "stake_green": 5,
-        "stake_white": 3,
-        "stake_red": 2,
-        "stake_purple": 2
-      },
-      "losses": [
-        3,
-        2,
-        5,
-        null,
-        null,
-        2,
-        7,
-        9
-      ],
-      "wins_by_key": {
-        "stake_blue": 1,
-        "stake_white": 1,
-        "stake_red": 1,
-        "stake_green": 1
-      },
-      "wins": [
-        1,
-        1,
-        1,
-        null,
-        1
       ]
     },
     "j_throwback": {
-      "order": 114,
-      "count": 207,
       "losses_by_key": {
+        "stake_purple": 5,
+        "stake_orange": 5,
         "stake_gold": 6,
-        "stake_orange": 5,
-        "stake_green": 2,
         "stake_white": 3,
-        "stake_purple": 5
+        "stake_green": 2
       },
-      "losses": [
-        3,
-        null,
-        2,
-        null,
-        null,
-        5,
-        5,
-        6
-      ],
+      "count": 217,
       "wins_by_key": {
-        "stake_gold": 1,
+        "stake_red": 1,
         "stake_white": 5,
-        "stake_red": 1,
-        "stake_orange": 1
+        "stake_orange": 1,
+        "stake_gold": 1
       },
+      "order": 114,
       "wins": [
         5,
         1,
@@ -3906,333 +2174,261 @@
         null,
         1,
         1
-      ]
-    },
-    "j_mr_bones": {
-      "order": 107,
-      "count": 30,
-      "losses_by_key": {},
-      "losses": {},
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_scary_face": {
-      "order": 33,
-      "count": 396,
-      "losses_by_key": {
-        "stake_gold": 10,
-        "stake_orange": 7,
-        "stake_green": 2,
-        "stake_red": 1,
-        "stake_black": 3,
-        "stake_white": 7,
-        "stake_blue": 2,
-        "stake_purple": 2
-      },
-      "losses": [
-        7,
-        1,
-        2,
-        3,
-        4,
-        3,
-        7,
-        10
       ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_green": 1
-      },
-      "wins": [
-        1,
-        null,
-        1,
-        1
-      ]
-    },
-    "j_smiley": {
-      "order": 104,
-      "count": 293,
-      "losses_by_key": {
-        "stake_gold": 10,
-        "stake_orange": 10,
-        "stake_black": 3,
-        "stake_white": 9,
-        "stake_red": 1,
-        "stake_purple": 6
-      },
       "losses": [
-        9,
-        1,
-        null,
         3,
-        1,
-        7,
-        10,
-        10
-      ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_ramen": {
-      "order": 100,
-      "count": 265,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 2,
-        "stake_green": 4,
-        "stake_white": 4,
-        "stake_purple": 6
-      },
-      "losses": [
-        4,
         null,
-        4,
-        null,
-        null,
-        7,
-        2,
-        4
-      ],
-      "wins_by_key": {
-        "stake_white": 2,
-        "stake_orange": 1,
-        "stake_purple": 2
-      },
-      "wins": [
         2,
         null,
         null,
-        null,
-        null,
-        3,
-        1
+        5,
+        5,
+        7
       ]
     },
-    "j_trading": {
-      "order": 95,
-      "count": 180,
+    "j_hanging_chad": {
       "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 7,
-        "stake_green": 4,
         "stake_red": 2,
-        "stake_white": 6,
-        "stake_blue": 3,
-        "stake_purple": 3
-      },
-      "losses": [
-        6,
-        2,
-        4,
-        null,
-        3,
-        3,
-        7,
-        5
-      ],
-      "wins_by_key": {
-        "stake_red": 1
-      },
-      "wins": [
-        null,
-        1
-      ]
-    },
-    "j_banner": {
-      "order": 22,
-      "count": 297,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 9,
-        "stake_green": 1,
+        "stake_green": 3,
+        "stake_orange": 11,
+        "stake_gold": 9,
+        "stake_white": 8,
+        "stake_blue": 5,
         "stake_black": 1,
-        "stake_white": 2,
-        "stake_blue": 1,
-        "stake_purple": 2
+        "stake_purple": 12
       },
-      "losses": [
-        2,
-        null,
-        1,
-        1,
-        1,
-        2,
-        9,
-        4
-      ],
+      "count": 712,
       "wins_by_key": {
+        "stake_red": 4,
+        "stake_green": 5,
+        "stake_gold": 1,
         "stake_black": 1,
-        "stake_white": 1,
-        "stake_red": 1
-      },
-      "wins": [
-        1,
-        1,
-        null,
-        1
-      ]
-    },
-    "j_bull": {
-      "order": 93,
-      "count": 322,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 6,
-        "stake_black": 2,
-        "stake_white": 4,
-        "stake_blue": 2,
-        "stake_purple": 3
-      },
-      "losses": [
-        4,
-        null,
-        null,
-        2,
-        2,
-        3,
-        6,
-        3
-      ],
-      "wins_by_key": {
-        "stake_orange": 2,
-        "stake_green": 2,
-        "stake_black": 2,
-        "stake_white": 3,
-        "stake_red": 1
-      },
-      "wins": [
-        3,
-        1,
-        2,
-        2,
-        null,
-        null,
-        2
-      ]
-    },
-    "j_mime": {
-      "order": 19,
-      "count": 166,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 5,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 1,
         "stake_purple": 1
       },
+      "order": 115,
+      "wins": [
+        null,
+        4,
+        5,
+        1,
+        null,
+        1,
+        null,
+        1
+      ],
       "losses": [
-        1,
-        null,
-        1,
-        1,
-        null,
+        8,
+        2,
+        3,
         1,
         5,
-        4
-      ],
-      "wins_by_key": {
-        "stake_green": 1,
-        "stake_purple": 2
+        12,
+        11,
+        11
+      ]
+    },
+    "j_rough_gem": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 2,
+        "stake_white": 1,
+        "stake_blue": 2,
+        "stake_black": 1,
+        "stake_green": 1
       },
+      "count": 46,
+      "wins_by_key": {},
+      "order": 116,
+      "wins": {},
+      "losses": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    "j_bloodstone": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 11,
+        "stake_gold": 6,
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_green": 3
+      },
+      "count": 215,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_purple": 1,
+        "stake_blue": 1
+      },
+      "order": 117,
+      "wins": [
+        null,
+        1,
+        1,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        3,
+        1,
+        1,
+        1,
+        11,
+        6
+      ]
+    },
+    "j_arrowhead": {
+      "losses_by_key": {
+        "stake_purple": 9,
+        "stake_blue": 1,
+        "stake_orange": 10,
+        "stake_gold": 7
+      },
+      "count": 267,
+      "wins_by_key": {
+        "stake_orange": 2,
+        "stake_green": 1
+      },
+      "order": 118,
       "wins": [
         null,
         null,
         1,
         null,
         null,
-        2
-      ]
-    },
-    "j_devious": {
-      "order": 14,
-      "count": 82,
-      "losses_by_key": {
-        "stake_gold": 1,
-        "stake_white": 3,
-        "stake_orange": 1
-      },
-      "losses": [
-        3,
         null,
+        3
+      ],
+      "losses": [
         null,
         null,
         null,
         null,
         1,
-        1
-      ],
+        9,
+        10,
+        7
+      ]
+    },
+    "j_onyx_agate": {
+      "losses_by_key": {
+        "stake_purple": 6,
+        "stake_orange": 3,
+        "stake_gold": 2,
+        "stake_white": 2,
+        "stake_blue": 3,
+        "stake_black": 2,
+        "stake_green": 1
+      },
+      "count": 262,
       "wins_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
         "stake_white": 2
       },
+      "order": 119,
       "wins": [
+        2,
+        1,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        1,
+        2,
+        3,
+        6,
+        3,
         2
       ]
     },
-    "j_fortune_teller": {
-      "order": 86,
-      "count": 617,
+    "j_glass": {
       "losses_by_key": {
-        "stake_gold": 20,
-        "stake_orange": 16,
-        "stake_green": 4,
-        "stake_black": 3,
-        "stake_white": 6,
-        "stake_blue": 2,
-        "stake_purple": 5
+        "stake_red": 1,
+        "stake_blue": 1
       },
+      "count": 6,
+      "wins_by_key": {},
+      "order": 120,
+      "wins": {},
       "losses": [
-        6,
         null,
-        4,
-        3,
-        2,
-        7,
-        16,
-        20
-      ],
-      "wins_by_key": {
-        "stake_orange": 1,
-        "stake_green": 2,
-        "stake_black": 2,
-        "stake_white": 4,
-        "stake_blue": 1,
-        "stake_red": 2
-      },
-      "wins": [
-        4,
-        2,
-        2,
-        2,
-        2,
+        1,
+        null,
         null,
         1
+      ]
+    },
+    "j_ring_master": {
+      "losses_by_key": {
+        "stake_green": 3,
+        "stake_orange": 3,
+        "stake_gold": 1,
+        "stake_white": 2,
+        "stake_blue": 1
+      },
+      "count": 57,
+      "wins_by_key": {},
+      "order": 121,
+      "wins": {},
+      "losses": [
+        2,
+        null,
+        3,
+        null,
+        1,
+        null,
+        3,
+        1
+      ]
+    },
+    "j_flower_pot": {
+      "losses_by_key": {
+        "stake_orange": 2,
+        "stake_white": 3
+      },
+      "count": 72,
+      "wins_by_key": {},
+      "order": 122,
+      "wins": {},
+      "losses": [
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2
       ]
     },
     "j_hallucination": {
-      "order": 85,
-      "count": 147,
       "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 4,
+        "stake_purple": 4,
         "stake_green": 2,
-        "stake_purple": 3
+        "stake_orange": 4,
+        "stake_gold": 3
       },
-      "losses": [
-        null,
-        null,
-        2,
-        null,
-        null,
-        4,
-        4,
-        3
-      ],
+      "count": 155,
       "wins_by_key": {
-        "stake_gold": 1
+        "stake_gold": 1,
+        "stake_blue": 1
       },
+      "order": 85,
       "wins": [
         null,
         null,
@@ -4242,391 +2438,1069 @@
         null,
         null,
         1
+      ],
+      "losses": [
+        null,
+        null,
+        2,
+        null,
+        null,
+        4,
+        4,
+        4
       ]
     },
-    "j_to_the_moon": {
-      "order": 84,
-      "count": 83,
+    "j_space": {
       "losses_by_key": {
-        "stake_gold": 1,
+        "stake_red": 1,
+        "stake_purple": 7,
         "stake_orange": 2,
+        "stake_gold": 8,
+        "stake_white": 5,
         "stake_black": 1,
-        "stake_white": 7,
-        "stake_blue": 1,
-        "stake_purple": 2
+        "stake_green": 2
       },
+      "count": 233,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_purple": 1
+      },
+      "order": 45,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
       "losses": [
+        5,
+        1,
+        2,
+        1,
+        null,
+        7,
+        2,
+        8
+      ]
+    },
+    "j_fortune_teller": {
+      "losses_by_key": {
+        "stake_purple": 7,
+        "stake_orange": 18,
+        "stake_gold": 20,
+        "stake_white": 6,
+        "stake_blue": 2,
+        "stake_black": 3,
+        "stake_green": 4
+      },
+      "count": 636,
+      "wins_by_key": {
+        "stake_red": 2,
+        "stake_green": 2,
+        "stake_orange": 1,
+        "stake_white": 4,
+        "stake_blue": 2,
+        "stake_black": 2
+      },
+      "order": 86,
+      "wins": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        null,
+        1
+      ],
+      "losses": [
+        6,
+        null,
+        4,
+        3,
+        2,
+        7,
+        18,
+        21
+      ]
+    },
+    "j_square": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 11,
+        "stake_gold": 19,
+        "stake_white": 5,
+        "stake_blue": 4,
+        "stake_green": 7
+      },
+      "count": 359,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_white": 1
+      },
+      "order": 65,
+      "wins": [
+        1,
+        1,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        5,
+        null,
         7,
         null,
-        null,
-        1,
+        4,
         3,
-        2,
-        2,
-        1
-      ],
+        12,
+        19
+      ]
+    },
+    "j_wee": {
+      "losses_by_key": {
+        "stake_green": 1,
+        "stake_orange": 2,
+        "stake_gold": 1,
+        "stake_white": 2,
+        "stake_blue": 1
+      },
+      "count": 44,
       "wins_by_key": {
         "stake_white": 1
       },
+      "order": 124,
       "wins": [
         1
-      ]
-    },
-    "j_mail": {
-      "order": 83,
-      "count": 202,
-      "losses_by_key": {
-        "stake_gold": 7,
-        "stake_orange": 9,
-        "stake_green": 3,
-        "stake_red": 1,
-        "stake_white": 5,
-        "stake_blue": 1,
-        "stake_purple": 3
-      },
-      "losses": [
-        5,
-        1,
-        3,
-        null,
-        1,
-        3,
-        9,
-        7
       ],
-      "wins_by_key": {},
-      "wins": {}
-    },
-    "j_mad": {
-      "order": 8,
-      "count": 131,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 3,
-        "stake_white": 4,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        4,
-        null,
-        null,
-        null,
-        2,
-        1,
-        3,
-        5
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_red": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        1,
-        null,
-        1,
-        null,
-        1
-      ]
-    },
-    "j_cloud_9": {
-      "order": 73,
-      "count": 179,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 4,
-        "stake_green": 2,
-        "stake_black": 3,
-        "stake_white": 2,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
       "losses": [
         2,
         null,
-        2,
-        3,
-        1,
-        1,
-        4,
-        4
-      ],
-      "wins_by_key": {
-        "stake_black": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_hologram": {
-      "order": 70,
-      "count": 364,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 8,
-        "stake_green": 5,
-        "stake_white": 2,
-        "stake_blue": 3,
-        "stake_purple": 5
-      },
-      "losses": [
-        2,
-        null,
-        5,
-        null,
-        3,
-        6,
-        8,
-        4
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_white": 3,
-        "stake_purple": 3
-      },
-      "wins": [
-        3,
-        null,
-        1,
-        1,
-        null,
-        3,
-        null,
-        1
-      ]
-    },
-    "j_family": {
-      "order": 133,
-      "count": 223,
-      "losses_by_key": {
-        "stake_gold": 5,
-        "stake_orange": 3,
-        "stake_green": 2,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_red": 1,
-        "stake_purple": 4
-      },
-      "losses": [
-        1,
-        1,
-        2,
-        1,
-        null,
-        5,
-        3,
-        5
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_blue": 1,
-        "stake_black": 1
-      },
-      "wins": [
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_order": {
-      "order": 134,
-      "count": 120,
-      "losses_by_key": {
-        "stake_gold": 6,
-        "stake_orange": 2,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        1,
-        null,
-        null,
         1,
         null,
         1,
-        2,
-        6
-      ],
-      "wins_by_key": {
-        "stake_white": 2
-      },
-      "wins": [
-        2
-      ]
-    },
-    "j_tribe": {
-      "order": 135,
-      "count": 82,
-      "losses_by_key": {
-        "stake_gold": 4,
-        "stake_orange": 2,
-        "stake_black": 1,
-        "stake_white": 2,
-        "stake_purple": 3
-      },
-      "losses": [
-        2,
-        null,
-        null,
-        1,
-        null,
-        3,
-        2,
-        4
-      ],
-      "wins_by_key": {
-        "stake_white": 1,
-        "stake_orange": 1
-      },
-      "wins": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1
-      ]
-    },
-    "j_stuntman": {
-      "order": 136,
-      "count": 325,
-      "losses_by_key": {
-        "stake_gold": 11,
-        "stake_orange": 6,
-        "stake_green": 2,
-        "stake_black": 2,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "losses": [
-        null,
         null,
         2,
-        2,
-        1,
-        1,
-        6,
-        11
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_green": 1,
-        "stake_black": 1,
-        "stake_red": 1,
-        "stake_blue": 2,
-        "stake_purple": 1
-      },
-      "wins": [
-        null,
-        1,
-        1,
-        1,
-        2,
-        2,
-        null,
-        1
-      ]
-    },
-    "j_invisible": {
-      "order": 137,
-      "count": 52,
-      "losses_by_key": {
-        "stake_gold": 2,
-        "stake_orange": 1,
-        "stake_green": 2,
-        "stake_red": 1,
-        "stake_blue": 1,
-        "stake_purple": 2
-      },
-      "losses": [
-        null,
-        1,
-        2,
-        null,
-        1,
-        2,
-        1,
-        2
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
         1
       ]
     },
     "j_seance": {
-      "order": 66,
-      "count": 46,
       "losses_by_key": {
-        "stake_gold": 2,
         "stake_white": 3,
         "stake_green": 1,
-        "stake_orange": 2
+        "stake_orange": 2,
+        "stake_gold": 2
       },
-      "losses": [
-        3,
-        null,
-        1,
-        null,
-        null,
-        null,
-        2,
-        2
-      ],
+      "count": 47,
       "wins_by_key": {
         "stake_blue": 1
       },
+      "order": 66,
       "wins": [
         null,
         null,
         null,
         null,
         1
+      ],
+      "losses": [
+        3,
+        null,
+        1,
+        null,
+        null,
+        null,
+        2,
+        2
       ]
     },
-    "j_perkeo": {
-      "order": 150,
-      "count": 109,
+    "j_burglar": {
       "losses_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 3,
-        "stake_red": 1,
-        "stake_green": 1
+        "stake_purple": 2,
+        "stake_blue": 1,
+        "stake_orange": 5,
+        "stake_gold": 3
       },
+      "count": 138,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 47,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ],
       "losses": [
         null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        5,
+        5
+      ]
+    },
+    "j_drunkard": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 2,
+        "stake_orange": 2,
+        "stake_gold": 1,
+        "stake_white": 1
+      },
+      "count": 57,
+      "wins_by_key": {
+        "stake_gold": 1
+      },
+      "order": 88,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
         1,
         1,
         null,
         null,
+        null,
+        2,
+        2,
+        1
+      ]
+    },
+    "j_blackboard": {
+      "losses_by_key": {
+        "stake_red": 3,
+        "stake_green": 2,
+        "stake_orange": 12,
+        "stake_gold": 8,
+        "stake_white": 6,
+        "stake_blue": 2
+      },
+      "count": 402,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_orange": 2,
+        "stake_white": 4,
+        "stake_blue": 1,
+        "stake_black": 1
+      },
+      "order": 48,
+      "wins": [
+        4,
+        1,
+        null,
+        1,
+        1,
+        null,
+        2
+      ],
+      "losses": [
+        6,
+        3,
+        2,
+        null,
+        2,
+        null,
+        12,
+        8
+      ]
+    },
+    "j_crazy": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
+        "stake_orange": 3,
+        "stake_gold": 2,
+        "stake_white": 9,
+        "stake_black": 1
+      },
+      "count": 87,
+      "wins_by_key": {},
+      "order": 9,
+      "wins": {},
+      "losses": [
+        9,
+        1,
+        null,
+        1,
+        null,
+        1,
+        3,
+        2
+      ]
+    },
+    "j_runner": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 4,
+        "stake_gold": 4,
+        "stake_white": 3,
+        "stake_black": 2
+      },
+      "count": 134,
+      "wins_by_key": {
+        "stake_black": 1,
+        "stake_white": 1
+      },
+      "order": 49,
+      "wins": [
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        3,
+        null,
+        null,
+        2,
+        null,
+        2,
+        4,
+        4
+      ]
+    },
+    "j_stone": {
+      "losses_by_key": {
+        "stake_black": 1
+      },
+      "count": 43,
+      "wins_by_key": {
+        "stake_orange": 1,
+        "stake_white": 2
+      },
+      "order": 89,
+      "wins": [
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        null,
+        null,
+        null,
+        1
+      ]
+    },
+    "j_ice_cream": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 4,
+        "stake_gold": 2,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_green": 1
+      },
+      "count": 180,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_gold": 1
+      },
+      "order": 50,
+      "wins": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        1,
+        null,
+        1,
+        2,
+        4,
+        2
+      ]
+    },
+    "j_golden": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 9,
+        "stake_gold": 14,
+        "stake_white": 7,
+        "stake_blue": 3,
+        "stake_black": 2,
+        "stake_green": 5
+      },
+      "count": 323,
+      "wins_by_key": {},
+      "order": 90,
+      "wins": {},
+      "losses": [
+        7,
+        null,
+        5,
+        2,
+        3,
+        3,
+        9,
+        16
+      ]
+    },
+    "j_splash": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 7,
+        "stake_orange": 6,
+        "stake_gold": 4,
+        "stake_white": 3,
+        "stake_green": 2
+      },
+      "count": 231,
+      "wins_by_key": {
+        "stake_white": 2
+      },
+      "order": 52,
+      "wins": [
+        2
+      ],
+      "losses": [
+        3,
+        1,
+        2,
+        null,
+        null,
+        7,
+        6,
+        5
+      ]
+    },
+    "j_lusty_joker": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 11,
+        "stake_gold": 9,
+        "stake_white": 4,
+        "stake_blue": 2,
+        "stake_black": 1,
+        "stake_green": 2
+      },
+      "count": 287,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_gold": 1
+      },
+      "order": 3,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        4,
+        null,
+        2,
+        1,
+        2,
+        2,
+        11,
+        9
+      ]
+    },
+    "j_blue_joker": {
+      "losses_by_key": {
+        "stake_red": 3,
+        "stake_purple": 9,
+        "stake_orange": 12,
+        "stake_gold": 18,
+        "stake_white": 8,
+        "stake_blue": 7,
+        "stake_green": 9
+      },
+      "count": 619,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 1
+      },
+      "order": 53,
+      "wins": [
+        1,
+        null,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        8,
+        3,
+        9,
+        null,
+        7,
+        9,
+        12,
+        19
+      ]
+    },
+    "j_trading": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_purple": 3,
+        "stake_orange": 7,
+        "stake_gold": 5,
+        "stake_white": 6,
+        "stake_blue": 3,
+        "stake_green": 4
+      },
+      "count": 187,
+      "wins_by_key": {
+        "stake_red": 1
+      },
+      "order": 95,
+      "wins": [
+        null,
+        1
+      ],
+      "losses": [
+        6,
+        2,
+        4,
+        null,
+        3,
+        3,
+        7,
+        6
+      ]
+    },
+    "j_baseball": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 5,
+        "stake_gold": 5,
+        "stake_white": 4,
+        "stake_blue": 2,
+        "stake_black": 1
+      },
+      "count": 391,
+      "wins_by_key": {
+        "stake_red": 2,
+        "stake_green": 1,
+        "stake_orange": 2,
+        "stake_gold": 1,
+        "stake_white": 7,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 2
+      },
+      "order": 92,
+      "wins": [
+        7,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "losses": [
+        4,
+        null,
+        null,
+        1,
+        2,
+        2,
+        5,
+        5
+      ]
+    },
+    "j_wrathful_joker": {
+      "losses_by_key": {
+        "stake_purple": 5,
+        "stake_orange": 6,
+        "stake_gold": 7,
+        "stake_white": 6,
+        "stake_blue": 1,
+        "stake_green": 2
+      },
+      "count": 240,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
+        "stake_orange": 1,
+        "stake_white": 2
+      },
+      "order": 4,
+      "wins": [
+        2,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        6,
+        null,
+        2,
+        null,
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    "j_duo": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_purple": 2,
+        "stake_orange": 7,
+        "stake_gold": 9,
+        "stake_white": 3,
+        "stake_green": 5
+      },
+      "count": 263,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_blue": 1,
+        "stake_green": 1,
+        "stake_white": 1
+      },
+      "order": 131,
+      "wins": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        3,
+        2,
+        5,
+        null,
+        null,
+        2,
+        7,
+        9
+      ]
+    },
+    "j_troubadour": {
+      "losses_by_key": {
+        "stake_white": 1,
+        "stake_black": 1,
+        "stake_gold": 3
+      },
+      "count": 33,
+      "wins_by_key": {},
+      "order": 111,
+      "wins": {},
+      "losses": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        3
+      ]
+    },
+    "j_smeared": {
+      "losses_by_key": {
+        "stake_white": 6,
+        "stake_purple": 1,
+        "stake_orange": 3,
+        "stake_gold": 2
+      },
+      "count": 127,
+      "wins_by_key": {
+        "stake_white": 3
+      },
+      "order": 113,
+      "wins": [
+        3
+      ],
+      "losses": [
+        6,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        3
+      ]
+    },
+    "j_rocket": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 7,
+        "stake_gold": 7,
+        "stake_white": 6,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_green": 2
+      },
+      "count": 217,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_purple": 1,
+        "stake_black": 1
+      },
+      "order": 74,
+      "wins": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        6,
+        null,
+        2,
+        1,
+        1,
+        3,
+        7,
+        8
+      ]
+    },
+    "j_seeing_double": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_gold": 3
+      },
+      "count": 105,
+      "wins_by_key": {
+        "stake_orange": 1,
+        "stake_green": 1
+      },
+      "order": 128,
+      "wins": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        3
+      ]
+    },
+    "j_trio": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_green": 4,
+        "stake_orange": 6,
+        "stake_gold": 3,
+        "stake_white": 3,
+        "stake_blue": 2,
+        "stake_black": 1,
+        "stake_purple": 4
+      },
+      "count": 287,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_white": 2,
+        "stake_blue": 3,
+        "stake_purple": 1
+      },
+      "order": 132,
+      "wins": [
+        2,
+        1,
+        1,
         null,
         3,
         1
       ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_white": 2,
-        "stake_red": 1
-      },
-      "wins": [
+      "losses": [
+        3,
         2,
+        4,
+        1,
+        2,
+        4,
+        6,
+        5
+      ]
+    },
+    "j_sixth_sense": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 2,
+        "stake_gold": 1,
+        "stake_white": 5,
+        "stake_blue": 1,
+        "stake_green": 2
+      },
+      "count": 94,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_purple": 1
+      },
+      "order": 54,
+      "wins": [
         1,
         null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        5,
+        null,
+        2,
+        null,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    "j_lucky_cat": {
+      "losses_by_key": {
+        "stake_black": 2,
+        "stake_purple": 1,
+        "stake_orange": 3,
+        "stake_gold": 1
+      },
+      "count": 61,
+      "wins_by_key": {
+        "stake_black": 1
+      },
+      "order": 91,
+      "wins": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        null,
+        null,
+        null,
+        2,
+        null,
+        1,
+        3,
+        1
+      ]
+    },
+    "j_dna": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 8,
+        "stake_orange": 6,
+        "stake_gold": 6,
+        "stake_white": 5,
+        "stake_black": 2,
+        "stake_green": 3
+      },
+      "count": 154,
+      "wins_by_key": {
+        "stake_red": 2,
+        "stake_white": 1,
+        "stake_black": 1,
+        "stake_gold": 1
+      },
+      "order": 51,
+      "wins": [
+        1,
+        2,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        5,
+        1,
+        3,
+        2,
+        null,
+        8,
+        6,
+        6
+      ]
+    },
+    "j_misprint": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 6,
+        "stake_orange": 8,
+        "stake_gold": 6,
+        "stake_white": 10,
+        "stake_green": 5
+      },
+      "count": 468,
+      "wins_by_key": {
+        "stake_black": 1,
+        "stake_white": 1
+      },
+      "order": 27,
+      "wins": [
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        10,
+        1,
+        5,
+        null,
+        null,
+        6,
+        8,
+        8
+      ]
+    },
+    "j_juggler": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 4,
+        "stake_gold": 5,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_green": 1
+      },
+      "count": 145,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_blue": 2
+      },
+      "order": 87,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        2
+      ],
+      "losses": [
+        2,
+        null,
+        1,
+        null,
+        1,
+        1,
+        4,
+        5
+      ]
+    },
+    "j_sly": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 3,
+        "stake_gold": 4,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_green": 1
+      },
+      "count": 191,
+      "wins_by_key": {},
+      "order": 11,
+      "wins": {},
+      "losses": [
+        2,
+        null,
+        1,
+        null,
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    "j_dusk": {
+      "losses_by_key": {
+        "stake_purple": 5,
+        "stake_orange": 4,
+        "stake_gold": 3,
+        "stake_white": 1,
+        "stake_green": 2
+      },
+      "count": 113,
+      "wins_by_key": {
+        "stake_purple": 1
+      },
+      "order": 28,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        2,
+        null,
+        null,
+        5,
+        4,
+        3
+      ]
+    },
+    "j_matador": {
+      "losses_by_key": {
+        "stake_green": 1,
+        "stake_gold": 1
+      },
+      "count": 34,
+      "wins_by_key": {},
+      "order": 129,
+      "wins": {},
+      "losses": [
+        null,
+        null,
+        1,
         null,
         null,
         null,
@@ -4634,512 +3508,1806 @@
         1
       ]
     },
-    "j_satellite": {
-      "order": 139,
-      "count": 21,
+    "j_wily": {
       "losses_by_key": {
-        "stake_white": 2
+        "stake_purple": 8,
+        "stake_orange": 4,
+        "stake_gold": 3,
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 2,
+        "stake_green": 3
       },
+      "count": 305,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 12,
+      "wins": [
+        1
+      ],
       "losses": [
+        1,
+        null,
+        3,
+        2,
+        1,
+        8,
+        4,
+        3
+      ]
+    },
+    "j_ride_the_bus": {
+      "losses_by_key": {
+        "stake_purple": 9,
+        "stake_orange": 14,
+        "stake_gold": 21,
+        "stake_white": 4,
+        "stake_blue": 4,
+        "stake_black": 4,
+        "stake_green": 3
+      },
+      "count": 637,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
+        "stake_orange": 1,
+        "stake_gold": 2,
+        "stake_green": 1
+      },
+      "order": 44,
+      "wins": [
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
         2
       ],
-      "wins_by_key": {},
-      "wins": {}
+      "losses": [
+        4,
+        null,
+        3,
+        4,
+        4,
+        9,
+        14,
+        24
+      ]
     },
-    "j_yorick": {
-      "order": 148,
-      "count": 51,
+    "j_clever": {
       "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 2,
-        "stake_green": 1,
+        "stake_purple": 2,
+        "stake_orange": 3,
+        "stake_gold": 2,
+        "stake_blue": 1,
+        "stake_green": 3
+      },
+      "count": 131,
+      "wins_by_key": {},
+      "order": 13,
+      "wins": {},
+      "losses": [
+        null,
+        null,
+        3,
+        null,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    "j_egg": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_green": 5,
+        "stake_orange": 9,
+        "stake_gold": 8,
+        "stake_white": 8,
+        "stake_blue": 1,
+        "stake_black": 2,
+        "stake_purple": 11
+      },
+      "count": 466,
+      "wins_by_key": {
+        "stake_white": 3,
+        "stake_blue": 1
+      },
+      "order": 46,
+      "wins": [
+        3,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        8,
+        2,
+        5,
+        2,
+        1,
+        11,
+        9,
+        9
+      ]
+    },
+    "j_devious": {
+      "losses_by_key": {
+        "stake_white": 3,
+        "stake_orange": 1,
+        "stake_gold": 1
+      },
+      "count": 82,
+      "wins_by_key": {
+        "stake_white": 2
+      },
+      "order": 14,
+      "wins": [
+        2
+      ],
+      "losses": [
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ]
+    },
+    "j_raised_fist": {
+      "losses_by_key": {
+        "stake_purple": 9,
+        "stake_orange": 12,
+        "stake_gold": 10,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_green": 1
+      },
+      "count": 392,
+      "wins_by_key": {
+        "stake_red": 1
+      },
+      "order": 29,
+      "wins": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        1,
+        null,
+        1,
+        9,
+        13,
+        11
+      ]
+    },
+    "j_crafty": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 3,
+        "stake_gold": 1,
+        "stake_white": 3,
+        "stake_black": 1
+      },
+      "count": 153,
+      "wins_by_key": {
         "stake_white": 1,
+        "stake_purple": 1,
+        "stake_gold": 1
+      },
+      "order": 15,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        3,
+        null,
+        null,
+        1,
+        null,
+        2,
+        3,
+        1
+      ]
+    },
+    "j_swashbuckler": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 2,
+        "stake_orange": 8,
+        "stake_gold": 13,
+        "stake_white": 12,
+        "stake_blue": 5,
+        "stake_black": 3,
+        "stake_purple": 5
+      },
+      "count": 556,
+      "wins_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 3,
+        "stake_blue": 2,
+        "stake_green": 1
+      },
+      "order": 110,
+      "wins": [
+        3,
+        null,
+        1,
+        null,
+        2,
+        1,
+        1,
+        1
+      ],
+      "losses": [
+        12,
+        1,
+        2,
+        3,
+        5,
+        5,
+        8,
+        14
+      ]
+    },
+    "j_half": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 7,
+        "stake_orange": 16,
+        "stake_gold": 8,
+        "stake_white": 8,
+        "stake_blue": 2,
+        "stake_green": 2
+      },
+      "count": 462,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_blue": 1,
+        "stake_white": 1
+      },
+      "order": 16,
+      "wins": [
+        1,
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        8,
+        1,
+        2,
+        null,
+        2,
+        7,
+        16,
+        9
+      ]
+    },
+    "j_supernova": {
+      "losses_by_key": {
+        "stake_purple": 5,
+        "stake_orange": 13,
+        "stake_gold": 12,
+        "stake_white": 9,
+        "stake_blue": 4,
+        "stake_black": 2,
+        "stake_green": 2
+      },
+      "count": 358,
+      "wins_by_key": {
+        "stake_black": 1,
+        "stake_white": 1
+      },
+      "order": 43,
+      "wins": [
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        9,
+        null,
+        2,
+        2,
+        4,
+        5,
+        13,
+        12
+      ]
+    },
+    "j_ticket": {
+      "losses_by_key": {
+        "stake_green": 1
+      },
+      "count": 3,
+      "wins_by_key": {},
+      "order": 106,
+      "wins": {},
+      "losses": [
+        null,
+        null,
+        1
+      ]
+    },
+    "j_business": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 4,
+        "stake_orange": 2,
+        "stake_gold": 2,
+        "stake_white": 5,
+        "stake_blue": 1,
+        "stake_green": 2
+      },
+      "count": 186,
+      "wins_by_key": {
+        "stake_black": 1
+      },
+      "order": 42,
+      "wins": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        5,
+        1,
+        2,
+        null,
+        1,
+        4,
+        3,
+        3
+      ]
+    },
+    "j_stencil": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 2,
+        "stake_orange": 11,
+        "stake_gold": 4,
+        "stake_white": 4,
+        "stake_blue": 1,
+        "stake_green": 2
+      },
+      "count": 291,
+      "wins_by_key": {
+        "stake_black": 1,
+        "stake_orange": 1
+      },
+      "order": 17,
+      "wins": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        4,
+        1,
+        2,
+        null,
+        1,
+        2,
+        11,
+        4
+      ]
+    },
+    "j_diet_cola": {
+      "losses_by_key": {
+        "stake_white": 1,
+        "stake_purple": 1
+      },
+      "count": 30,
+      "wins_by_key": {},
+      "order": 94,
+      "wins": {},
+      "losses": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1
+      ]
+    },
+    "j_four_fingers": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_orange": 6,
+        "stake_gold": 7,
+        "stake_white": 6,
+        "stake_blue": 2,
+        "stake_black": 1,
         "stake_purple": 2
       },
+      "count": 142,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_blue": 1
+      },
+      "order": 18,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        6,
+        1,
+        1,
+        1,
+        2,
+        2,
+        6,
+        8
+      ]
+    },
+    "j_mime": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 5,
+        "stake_gold": 4,
+        "stake_white": 1,
+        "stake_black": 1,
+        "stake_green": 1
+      },
+      "count": 166,
+      "wins_by_key": {
+        "stake_green": 1,
+        "stake_purple": 2
+      },
+      "order": 19,
+      "wins": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        2
+      ],
+      "losses": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        5,
+        4
+      ]
+    },
+    "j_bull": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 7,
+        "stake_gold": 3,
+        "stake_white": 4,
+        "stake_blue": 2,
+        "stake_black": 2
+      },
+      "count": 360,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 2,
+        "stake_orange": 2,
+        "stake_white": 3,
+        "stake_black": 2
+      },
+      "order": 93,
+      "wins": [
+        3,
+        1,
+        2,
+        2,
+        null,
+        null,
+        2,
+        1
+      ],
+      "losses": [
+        4,
+        null,
+        null,
+        2,
+        2,
+        3,
+        7,
+        4
+      ]
+    },
+    "j_loyalty_card": {
+      "losses_by_key": {
+        "stake_white": 4,
+        "stake_purple": 1,
+        "stake_orange": 1,
+        "stake_gold": 3
+      },
+      "count": 54,
+      "wins_by_key": {},
+      "order": 25,
+      "wins": {},
+      "losses": [
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        3
+      ]
+    },
+    "j_credit_card": {
+      "losses_by_key": {
+        "stake_white": 4,
+        "stake_green": 2,
+        "stake_black": 1,
+        "stake_gold": 2
+      },
+      "count": 93,
+      "wins_by_key": {},
+      "order": 20,
+      "wins": {},
+      "losses": [
+        4,
+        null,
+        2,
+        1,
+        null,
+        null,
+        null,
+        2
+      ]
+    },
+    "j_turtle_bean": {
+      "losses_by_key": {
+        "stake_orange": 1,
+        "stake_purple": 2
+      },
+      "count": 55,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 80,
+      "wins": [
+        1
+      ],
+      "losses": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1
+      ]
+    },
+    "j_droll": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 8,
+        "stake_gold": 5,
+        "stake_white": 5,
+        "stake_blue": 1
+      },
+      "count": 144,
+      "wins_by_key": {
+        "stake_purple": 1,
+        "stake_blue": 1
+      },
+      "order": 10,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        5,
+        null,
+        null,
+        null,
+        1,
+        1,
+        8,
+        5
+      ]
+    },
+    "j_ceremonial": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 5,
+        "stake_orange": 5,
+        "stake_gold": 4,
+        "stake_white": 2,
+        "stake_blue": 2,
+        "stake_black": 1,
+        "stake_purple": 3
+      },
+      "count": 264,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_blue": 1,
+        "stake_white": 1
+      },
+      "order": 21,
+      "wins": [
+        1,
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        1,
+        5,
+        1,
+        2,
+        3,
+        6,
+        4
+      ]
+    },
+    "j_certificate": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 4,
+        "stake_gold": 7,
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_green": 1
+      },
+      "count": 184,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_purple": 1,
+        "stake_orange": 1
+      },
+      "order": 112,
+      "wins": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        4,
+        9
+      ]
+    },
+    "j_banner": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 9,
+        "stake_gold": 4,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_green": 1
+      },
+      "count": 303,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_black": 1,
+        "stake_white": 1
+      },
+      "order": 22,
+      "wins": [
+        1,
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        1,
+        1,
+        1,
+        2,
+        9,
+        6
+      ]
+    },
+    "j_pareidolia": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_green": 1,
+        "stake_orange": 5,
+        "stake_gold": 4,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 4
+      },
+      "count": 194,
+      "wins_by_key": {
+        "stake_green": 1,
+        "stake_gold": 1
+      },
+      "order": 37,
+      "wins": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        4,
+        5,
+        4
+      ]
+    },
+    "j_8_ball": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 4,
+        "stake_orange": 4,
+        "stake_gold": 5,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_green": 1
+      },
+      "count": 148,
+      "wins_by_key": {},
+      "order": 26,
+      "wins": {},
+      "losses": [
+        2,
+        1,
+        1,
+        null,
+        1,
+        4,
+        4,
+        5
+      ]
+    },
+    "j_mystic_summit": {
+      "losses_by_key": {
+        "stake_purple": 3,
+        "stake_orange": 8,
+        "stake_gold": 3,
+        "stake_white": 2,
+        "stake_blue": 2,
+        "stake_green": 1
+      },
+      "count": 262,
+      "wins_by_key": {
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 23,
+      "wins": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        1,
+        null,
+        2,
+        3,
+        8,
+        3
+      ]
+    },
+    "j_delayed_grat": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 3,
+        "stake_gold": 3,
+        "stake_white": 4,
+        "stake_blue": 3,
+        "stake_green": 1
+      },
+      "count": 146,
+      "wins_by_key": {
+        "stake_purple": 1
+      },
+      "order": 35,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        4,
+        null,
+        1,
+        null,
+        3,
+        2,
+        3,
+        3
+      ]
+    },
+    "j_fibonacci": {
+      "losses_by_key": {
+        "stake_purple": 4,
+        "stake_orange": 10,
+        "stake_gold": 9,
+        "stake_white": 4,
+        "stake_blue": 2,
+        "stake_black": 3,
+        "stake_green": 2
+      },
+      "count": 377,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_purple": 2,
+        "stake_white": 5
+      },
+      "order": 31,
+      "wins": [
+        5,
+        1,
+        null,
+        null,
+        null,
+        2
+      ],
+      "losses": [
+        4,
+        null,
+        2,
+        3,
+        2,
+        4,
+        10,
+        9
+      ]
+    },
+    "j_steel_joker": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_orange": 1,
+        "stake_gold": 1
+      },
+      "count": 58,
+      "wins_by_key": {
+        "stake_white": 2
+      },
+      "order": 32,
+      "wins": [
+        2
+      ],
+      "losses": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1
+      ]
+    },
+    "j_marble": {
+      "losses_by_key": {
+        "stake_black": 1,
+        "stake_purple": 1,
+        "stake_orange": 1,
+        "stake_gold": 2
+      },
+      "count": 63,
+      "wins_by_key": {
+        "stake_black": 1,
+        "stake_white": 1
+      },
+      "order": 24,
+      "wins": [
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        2
+      ]
+    },
+    "j_scary_face": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_green": 2,
+        "stake_orange": 10,
+        "stake_gold": 10,
+        "stake_white": 7,
+        "stake_blue": 4,
+        "stake_black": 3,
+        "stake_purple": 3
+      },
+      "count": 429,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_green": 1,
+        "stake_black": 1
+      },
+      "order": 33,
+      "wins": [
+        1,
+        null,
+        1,
+        1
+      ],
+      "losses": [
+        7,
+        1,
+        2,
+        3,
+        4,
+        3,
+        10,
+        10
+      ]
+    },
+    "j_chaos": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 3,
+        "stake_gold": 5,
+        "stake_white": 1,
+        "stake_green": 1
+      },
+      "count": 111,
+      "wins_by_key": {},
+      "order": 30,
+      "wins": {},
       "losses": [
         1,
         null,
         1,
         null,
         null,
+        1,
+        3,
+        5
+      ]
+    },
+    "j_riff_raff": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 6,
+        "stake_gold": 3,
+        "stake_white": 3,
+        "stake_green": 1
+      },
+      "count": 143,
+      "wins_by_key": {},
+      "order": 67,
+      "wins": {},
+      "losses": [
+        3,
+        null,
+        1,
+        null,
+        null,
         2,
+        6,
+        3
+      ]
+    },
+    "j_merry_andy": {
+      "losses_by_key": {
+        "stake_black": 1,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_gold": 1
+      },
+      "count": 40,
+      "wins_by_key": {},
+      "order": 125,
+      "wins": {},
+      "losses": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1
+      ]
+    },
+    "j_vampire": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 6,
+        "stake_gold": 6,
+        "stake_white": 3,
+        "stake_blue": 1
+      },
+      "count": 167,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_green": 2
+      },
+      "order": 68,
+      "wins": [
+        1,
+        null,
+        2
+      ],
+      "losses": [
+        3,
+        null,
+        null,
+        null,
+        1,
+        2,
+        6,
+        6
+      ]
+    },
+    "j_oops": {
+      "losses_by_key": {
+        "stake_white": 2,
+        "stake_purple": 2,
+        "stake_orange": 1,
+        "stake_gold": 5
+      },
+      "count": 74,
+      "wins_by_key": {
+        "stake_gold": 1
+      },
+      "order": 126,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        5
+      ]
+    },
+    "j_shortcut": {
+      "losses_by_key": {
+        "stake_white": 2,
+        "stake_purple": 2,
+        "stake_black": 1,
+        "stake_gold": 3
+      },
+      "count": 146,
+      "wins_by_key": {
+        "stake_white": 3,
+        "stake_blue": 1
+      },
+      "order": 69,
+      "wins": [
+        3,
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        3
+      ]
+    },
+    "j_hologram": {
+      "losses_by_key": {
+        "stake_purple": 6,
+        "stake_orange": 8,
+        "stake_gold": 4,
+        "stake_white": 2,
+        "stake_blue": 3,
+        "stake_green": 5
+      },
+      "count": 367,
+      "wins_by_key": {
+        "stake_purple": 3,
+        "stake_gold": 1,
+        "stake_white": 3,
+        "stake_black": 1,
+        "stake_green": 1
+      },
+      "order": 70,
+      "wins": [
+        3,
+        null,
+        1,
+        1,
+        null,
+        3,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        5,
+        null,
+        3,
+        6,
+        8,
+        5
+      ]
+    },
+    "j_idol": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_purple": 2,
+        "stake_orange": 4,
+        "stake_gold": 3,
+        "stake_white": 3,
+        "stake_blue": 1,
+        "stake_black": 1
+      },
+      "count": 173,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_white": 1,
+        "stake_blue": 2,
+        "stake_black": 1
+      },
+      "order": 127,
+      "wins": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "losses": [
+        3,
+        2,
+        null,
+        1,
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    "j_vagabond": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 1,
+        "stake_orange": 2,
+        "stake_gold": 3,
+        "stake_white": 2,
+        "stake_black": 1,
+        "stake_green": 1
+      },
+      "count": 143,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_green": 1
+      },
+      "order": 71,
+      "wins": [
+        1,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        1,
+        1,
+        1,
+        null,
+        1,
         2,
         3
-      ],
-      "wins_by_key": {
-        "stake_green": 1,
-        "stake_white": 2
+      ]
+    },
+    "j_baron": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_purple": 1,
+        "stake_orange": 7,
+        "stake_gold": 5,
+        "stake_white": 3,
+        "stake_green": 2
       },
+      "count": 214,
+      "wins_by_key": {
+        "stake_white": 1,
+        "stake_green": 1,
+        "stake_black": 1,
+        "stake_orange": 1
+      },
+      "order": 72,
       "wins": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        3,
         2,
+        2,
+        null,
+        null,
+        1,
+        7,
+        5
+      ]
+    },
+    "j_cloud_9": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 4,
+        "stake_gold": 4,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_black": 3,
+        "stake_green": 2
+      },
+      "count": 180,
+      "wins_by_key": {
+        "stake_black": 1
+      },
+      "order": 73,
+      "wins": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "losses": [
+        2,
+        null,
+        2,
+        3,
+        1,
+        1,
+        4,
+        5
+      ]
+    },
+    "j_hit_the_road": {
+      "losses_by_key": {
+        "stake_red": 1,
+        "stake_purple": 2,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 2,
+        "stake_black": 1,
+        "stake_green": 3
+      },
+      "count": 56,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 130,
+      "wins": [
+        1
+      ],
+      "losses": [
+        2,
+        1,
+        3,
+        1,
+        null,
+        2,
+        1,
+        1
+      ]
+    },
+    "j_obelisk": {
+      "losses_by_key": {
+        "stake_purple": 1,
+        "stake_orange": 3,
+        "stake_gold": 5,
+        "stake_white": 3,
+        "stake_green": 1
+      },
+      "count": 118,
+      "wins_by_key": {
+        "stake_gold": 2
+      },
+      "order": 75,
+      "wins": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2
+      ],
+      "losses": [
+        3,
+        null,
+        1,
+        null,
+        null,
+        1,
+        3,
+        5
+      ]
+    },
+    "j_midas_mask": {
+      "losses_by_key": {
+        "stake_red": 2,
+        "stake_purple": 2,
+        "stake_orange": 5,
+        "stake_gold": 4,
+        "stake_white": 9,
+        "stake_green": 2
+      },
+      "count": 164,
+      "wins_by_key": {
+        "stake_white": 3
+      },
+      "order": 76,
+      "wins": [
+        3
+      ],
+      "losses": [
+        9,
+        2,
+        2,
+        null,
+        null,
+        2,
+        6,
+        4
+      ]
+    },
+    "j_luchador": {
+      "losses_by_key": {
+        "stake_orange": 1,
+        "stake_white": 1
+      },
+      "count": 21,
+      "wins_by_key": {},
+      "order": 77,
+      "wins": {},
+      "losses": [
+        1,
+        null,
+        null,
+        null,
+        null,
         null,
         1
       ]
     }
   },
   "deck_stakes": {},
-  "progress": {
-    "challenges": {
-      "of": 20,
-      "tally": 1
+  "high_scores": {
+    "win_streak": {
+      "label": "Best Win Streak",
+      "amt": 4
     },
-    "joker_stickers": {
-      "of": 1200,
-      "tally": 643
+    "current_streak": {
+      "label": "",
+      "amt": 1
     },
-    "overall_tally": 2.055,
-    "deck_stakes": {
-      "of": 120,
-      "tally": 63
+    "furthest_ante": {
+      "label": "Highest Ante",
+      "amt": 13
     },
-    "discovered": {
-      "of": 340,
-      "tally": 340
+    "boss_streak": {
+      "label": "Most Bosses in a Row",
+      "amt": 8
     },
-    "overall_of": 4
+    "hand": {
+      "label": "Best Hand",
+      "amt": 123200808191
+    },
+    "poker_hand": {
+      "label": "Most Played Hand",
+      "amt": 0
+    },
+    "most_money": {
+      "label": "Most Money",
+      "amt": 630
+    },
+    "collection": {
+      "amt": 340,
+      "label": "Collection",
+      "tot": 340
+    },
+    "furthest_round": {
+      "label": "Highest Round",
+      "amt": 42
+    }
   },
-  "career_stats": {
-    "c_shop_rerolls": 1869,
-    "c_tarot_reading_used": 3375,
-    "c_planetarium_used": 1897,
-    "c_cards_played": 94177,
-    "c_cards_discarded": 58510,
-    "c_losses": 832,
-    "c_dollars_earned": 113374,
-    "c_vouchers_bought": 1217,
-    "c_wins": 76,
-    "c_hands_played": 21959,
-    "c_single_hand_round_streak": 0,
-    "c_tarots_bought": 1653,
-    "c_round_interest_cap_streak": 15,
-    "c_face_cards_played": 22613,
-    "c_planets_bought": 1660,
-    "c_shop_dollars_spent": 83521,
-    "c_cards_sold": 2072,
-    "c_jokers_sold": 1698,
-    "c_rounds": 10025,
-    "c_playing_cards_bought": 25
-  },
-  "challenges_unlocked": 6,
   "name": "PROX",
+  "career_stats": {
+    "c_losses": 852,
+    "c_shop_dollars_spent": 85975,
+    "c_hands_played": 22634,
+    "c_playing_cards_bought": 25,
+    "c_face_cards_played": 23303,
+    "c_shop_rerolls": 1914,
+    "c_cards_sold": 2129,
+    "c_jokers_sold": 1744,
+    "c_tarot_reading_used": 3494,
+    "c_planetarium_used": 1944,
+    "c_cards_played": 97150,
+    "c_dollars_earned": 116865,
+    "c_cards_discarded": 59517,
+    "c_rounds": 10286,
+    "c_round_interest_cap_streak": 22,
+    "c_tarots_bought": 1707,
+    "c_vouchers_bought": 1264,
+    "c_wins": 78,
+    "c_planets_bought": 1699,
+    "c_single_hand_round_streak": 0
+  },
+  "MEMORY": {
+    "stake": 8,
+    "deck": "Yellow Deck"
+  },
   "voucher_usage": {
-    "v_petroglyph": {
-      "count": 13,
-      "order": 28
+    "v_planet_tycoon": {
+      "count": 5,
+      "order": 20
+    },
+    "v_directors_cut": {
+      "count": 30,
+      "order": 29
+    },
+    "v_paint_brush": {
+      "count": 115,
+      "order": 31
+    },
+    "v_clearance_sale": {
+      "count": 162,
+      "order": 3
+    },
+    "v_antimatter": {
+      "count": 7,
+      "order": 24
+    },
+    "v_observatory": {
+      "count": 12,
+      "order": 12
+    },
+    "v_illusion": {
+      "count": 1,
+      "order": 26
+    },
+    "v_blank": {
+      "count": 84,
+      "order": 23
+    },
+    "v_money_tree": {
+      "count": 11,
+      "order": 22
+    },
+    "v_overstock_norm": {
+      "count": 95,
+      "order": 1
     },
     "v_retcon": {
       "count": 5,
       "order": 30
     },
-    "v_wasteful": {
-      "count": 38,
-      "order": 15
+    "v_grabber": {
+      "count": 137,
+      "order": 13
     },
-    "v_reroll_surplus": {
-      "count": 41,
-      "order": 7
+    "v_palette": {
+      "count": 9,
+      "order": 32
+    },
+    "v_reroll_glut": {
+      "count": 5,
+      "order": 8
+    },
+    "v_glow_up": {
+      "count": 7,
+      "order": 6
+    },
+    "v_crystal_ball": {
+      "count": 75,
+      "order": 9
+    },
+    "v_telescope": {
+      "count": 65,
+      "order": 11
+    },
+    "v_liquidation": {
+      "count": 15,
+      "order": 4
     },
     "v_planet_merchant": {
       "count": 28,
       "order": 19
     },
-    "v_blank": {
-      "count": 80,
-      "order": 23
+    "v_hieroglyph": {
+      "count": 69,
+      "order": 27
     },
-    "v_crystal_ball": {
-      "count": 70,
-      "order": 9
+    "v_recyclomancy": {
+      "count": 4,
+      "order": 16
     },
     "v_overstock_plus": {
       "count": 9,
       "order": 2
     },
+    "v_magic_trick": {
+      "count": 38,
+      "order": 25
+    },
+    "v_wasteful": {
+      "count": 39,
+      "order": 15
+    },
     "v_seed_money": {
-      "count": 94,
+      "count": 98,
       "order": 21
     },
     "v_hone": {
       "count": 66,
       "order": 5
     },
-    "v_clearance_sale": {
-      "count": 157,
-      "order": 3
+    "v_reroll_surplus": {
+      "count": 45,
+      "order": 7
     },
-    "v_telescope": {
-      "count": 63,
-      "order": 11
+    "v_nacho_tong": {
+      "count": 23,
+      "order": 14
     },
-    "v_grabber": {
-      "count": 131,
-      "order": 13
+    "v_tarot_merchant": {
+      "count": 22,
+      "order": 17
     },
-    "v_paint_brush": {
-      "count": 113,
-      "order": 31
-    },
-    "v_reroll_glut": {
-      "count": 4,
-      "order": 8
-    },
-    "v_omen_globe": {
+    "v_petroglyph": {
       "count": 13,
-      "order": 10
-    },
-    "v_recyclomancy": {
-      "count": 4,
-      "order": 16
+      "order": 28
     },
     "v_tarot_tycoon": {
       "count": 5,
       "order": 18
     },
-    "v_planet_tycoon": {
-      "count": 5,
-      "order": 20
-    },
-    "v_palette": {
-      "count": 9,
-      "order": 32
-    },
-    "v_liquidation": {
-      "count": 14,
-      "order": 4
-    },
-    "v_glow_up": {
-      "count": 7,
-      "order": 6
-    },
-    "v_tarot_merchant": {
-      "count": 21,
-      "order": 17
-    },
-    "v_directors_cut": {
-      "count": 30,
-      "order": 29
-    },
-    "v_observatory": {
-      "count": 12,
-      "order": 12
-    },
-    "v_nacho_tong": {
-      "count": 21,
-      "order": 14
-    },
-    "v_hieroglyph": {
-      "count": 67,
-      "order": 27
-    },
-    "v_magic_trick": {
-      "count": 38,
-      "order": 25
-    },
-    "v_overstock_norm": {
-      "count": 89,
-      "order": 1
-    },
-    "v_money_tree": {
-      "count": 11,
-      "order": 22
-    },
-    "v_antimatter": {
-      "count": 6,
-      "order": 24
-    },
-    "v_illusion": {
-      "count": 1,
-      "order": 26
+    "v_omen_globe": {
+      "count": 13,
+      "order": 10
     }
   },
-  "consumeable_usage": {
-    "c_chariot": {
-      "count": 278,
-      "order": 8
+  "stake": 9,
+  "hand_usage": {
+    "Flush": {
+      "count": 4234,
+      "order": "Flush"
     },
-    "c_justice": {
-      "count": 196,
-      "order": 9
+    "Pair": {
+      "count": 3345,
+      "order": "Pair"
     },
-    "c_wheel_of_fortune": {
-      "count": 391,
-      "order": 11
+    "HighCard": {
+      "count": 3227,
+      "order": "High Card"
     },
-    "c_empress": {
-      "count": 292,
-      "order": 4
+    "FiveofaKind": {
+      "count": 455,
+      "order": "Five of a Kind"
     },
-    "c_world": {
-      "count": 268,
-      "order": 22
+    "FlushFive": {
+      "count": 188,
+      "order": "Flush Five"
     },
-    "c_high_priestess": {
-      "count": 350,
-      "order": 3
+    "StraightFlush": {
+      "count": 343,
+      "order": "Straight Flush"
     },
-    "c_mercury": {
-      "count": 546,
-      "order": 1
+    "FlushHouse": {
+      "count": 140,
+      "order": "Flush House"
     },
-    "c_tower": {
-      "count": 89,
-      "order": 17
+    "TwoPair": {
+      "count": 3958,
+      "order": "Two Pair"
     },
-    "c_temperance": {
-      "count": 511,
-      "order": 15
+    "Straight": {
+      "count": 1676,
+      "order": "Straight"
     },
-    "c_talisman": {
-      "count": 80,
-      "order": 4
+    "FourofaKind": {
+      "count": 839,
+      "order": "Four of a Kind"
     },
-    "c_aura": {
-      "count": 135,
-      "order": 5
+    "FullHouse": {
+      "count": 3189,
+      "order": "Full House"
     },
-    "c_wraith": {
-      "count": 55,
-      "order": 6
-    },
-    "c_sigil": {
-      "count": 36,
-      "order": 7
-    },
-    "c_moon": {
-      "count": 167,
-      "order": 19
-    },
-    "c_ouija": {
-      "count": 59,
-      "order": 8
-    },
-    "c_ectoplasm": {
-      "count": 84,
-      "order": 9
-    },
-    "c_immolate": {
-      "count": 115,
-      "order": 10
-    },
-    "c_sun": {
-      "count": 267,
-      "order": 20
-    },
-    "c_venus": {
-      "count": 504,
-      "order": 2
-    },
-    "c_earth": {
-      "count": 605,
-      "order": 3
-    },
-    "c_mars": {
-      "count": 454,
-      "order": 4
-    },
-    "c_jupiter": {
-      "count": 575,
-      "order": 5
-    },
-    "c_saturn": {
-      "count": 361,
-      "order": 6
-    },
-    "c_uranus": {
-      "count": 600,
-      "order": 7
-    },
-    "c_neptune": {
-      "count": 284,
-      "order": 8
-    },
-    "c_pluto": {
-      "count": 564,
-      "order": 9
-    },
-    "c_hex": {
-      "count": 207,
-      "order": 13
-    },
-    "c_planet_x": {
-      "count": 220,
-      "order": 10
-    },
-    "c_fool": {
-      "count": 378,
-      "order": 1
-    },
-    "c_ceres": {
-      "count": 76,
-      "order": 11
-    },
-    "c_eris": {
-      "count": 123,
-      "order": 12
-    },
-    "c_black_hole": {
-      "count": 27,
-      "order": 18
-    },
-    "c_familiar": {
-      "count": 58,
-      "order": 1
-    },
-    "c_hermit": {
-      "count": 479,
-      "order": 10
-    },
-    "c_incantation": {
-      "count": 38,
-      "order": 3
-    },
-    "c_magician": {
-      "count": 413,
-      "order": 2
-    },
-    "c_judgement": {
-      "count": 255,
-      "order": 21
-    },
-    "c_soul": {
-      "count": 54,
-      "order": 17
-    },
-    "c_medium": {
-      "count": 69,
-      "order": 15
-    },
-    "c_ankh": {
-      "count": 40,
-      "order": 11
-    },
-    "c_lovers": {
-      "count": 217,
-      "order": 7
-    },
-    "c_cryptid": {
-      "count": 113,
-      "order": 16
-    },
-    "c_trance": {
-      "count": 44,
-      "order": 14
-    },
-    "c_star": {
-      "count": 148,
-      "order": 18
-    },
-    "c_deja_vu": {
-      "count": 102,
-      "order": 12
-    },
-    "c_strength": {
-      "count": 446,
-      "order": 12
-    },
-    "c_devil": {
-      "count": 165,
-      "order": 16
-    },
-    "c_heirophant": {
-      "count": 253,
-      "order": 6
-    },
-    "c_hanged_man": {
-      "count": 641,
-      "order": 13
-    },
-    "c_emperor": {
-      "count": 511,
-      "order": 5
-    },
-    "c_grim": {
-      "count": 103,
-      "order": 2
-    },
-    "c_death": {
-      "count": 785,
-      "order": 14
+    "ThreeofaKind": {
+      "count": 1410,
+      "order": "Three of a Kind"
     }
   },
   "deck_usage": {
-    "b_plasma": {
-      "order": 14,
+    "b_green": {
+      "losses_by_key": {},
       "count": 1,
-      "losses_by_key": {
-        "stake_gold": 24,
-        "stake_orange": 21,
-        "stake_green": 20,
-        "stake_red": 4,
-        "stake_black": 7,
-        "stake_white": 8,
-        "stake_blue": 8,
-        "stake_purple": 25
-      },
-      "losses": [
-        8,
-        4,
-        20,
-        7,
-        8,
-        25,
-        21,
-        24
-      ],
       "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 2,
-        "stake_blue": 1,
-        "stake_purple": 1
+        "stake_white": 1
       },
+      "order": 4,
       "wins": [
-        2,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1
-      ]
+      ],
+      "losses": {}
     },
     "b_black": {
-      "order": 5,
-      "count": 1,
       "losses_by_key": {
-        "stake_green": 3,
-        "stake_white": 12
+        "stake_white": 12,
+        "stake_green": 3
       },
-      "losses": [
-        12,
-        null,
-        3
-      ],
+      "count": 1,
       "wins_by_key": {
         "stake_red": 1,
         "stake_white": 2
       },
+      "order": 5,
       "wins": [
         2,
         1
+      ],
+      "losses": [
+        12,
+        null,
+        3
+      ]
+    },
+    "b_magic": {
+      "losses_by_key": {
+        "stake_white": 14
+      },
+      "count": 1,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 6,
+      "wins": [
+        1
+      ],
+      "losses": [
+        14
+      ]
+    },
+    "b_nebula": {
+      "losses_by_key": {
+        "stake_white": 26
+      },
+      "count": 1,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 7,
+      "wins": [
+        1
+      ],
+      "losses": [
+        26
       ]
     },
     "b_ghost": {
-      "order": 8,
-      "count": 1,
       "losses_by_key": {
-        "stake_gold": 68,
-        "stake_orange": 67,
-        "stake_green": 23,
-        "stake_black": 11,
-        "stake_white": 6,
         "stake_red": 9,
-        "stake_purple": 23
+        "stake_purple": 23,
+        "stake_orange": 67,
+        "stake_gold": 68,
+        "stake_white": 6,
+        "stake_black": 11,
+        "stake_green": 23
       },
+      "count": 1,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 3,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 8,
+      "wins": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "losses": [
         6,
         9,
@@ -5149,202 +5317,40 @@
         23,
         67,
         68
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 3,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        3,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    "b_magic": {
-      "order": 6,
-      "count": 1,
-      "losses_by_key": {
-        "stake_white": 14
-      },
-      "losses": [
-        14
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "b_blue": {
-      "order": 2,
-      "count": 1,
-      "losses_by_key": {
-        "stake_white": 16
-      },
-      "losses": [
-        16
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "b_green": {
-      "order": 4,
-      "count": 1,
-      "losses_by_key": {},
-      "losses": {},
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "b_nebula": {
-      "order": 7,
-      "count": 1,
-      "losses_by_key": {
-        "stake_white": 26
-      },
-      "losses": [
-        26
-      ],
-      "wins_by_key": {
-        "stake_white": 1
-      },
-      "wins": [
-        1
-      ]
-    },
-    "b_red": {
-      "order": 1,
-      "count": 1,
-      "losses_by_key": {
-        "stake_gold": 3,
-        "stake_orange": 64,
-        "stake_green": 1,
-        "stake_white": 10,
-        "stake_blue": 17,
-        "stake_purple": 2
-      },
-      "losses": [
-        10,
-        null,
-        1,
-        null,
-        17,
-        2,
-        64,
-        3
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    "b_zodiac": {
-      "order": 11,
-      "count": 1,
-      "losses_by_key": {
-        "stake_white": 22
-      },
-      "losses": [
-        22
-      ],
-      "wins_by_key": {
-        "stake_white": 7
-      },
-      "wins": [
-        7
-      ]
-    },
-    "b_erratic": {
-      "order": 15,
-      "count": 1,
-      "losses_by_key": {
-        "stake_gold": 18,
-        "stake_orange": 8,
-        "stake_green": 8,
-        "stake_red": 5,
-        "stake_black": 1,
-        "stake_white": 8,
-        "stake_blue": 5,
-        "stake_purple": 34
-      },
-      "losses": [
-        8,
-        5,
-        8,
-        1,
-        5,
-        34,
-        8,
-        18
-      ],
-      "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 1,
-        "stake_red": 1,
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_blue": 1,
-        "stake_purple": 1
-      },
-      "wins": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
       ]
     },
     "b_abandoned": {
-      "order": 9,
-      "count": 1,
       "losses_by_key": {
-        "stake_gold": 39,
-        "stake_orange": 1,
         "stake_red": 2,
-        "stake_black": 8,
+        "stake_purple": 9,
+        "stake_orange": 1,
+        "stake_gold": 39,
         "stake_white": 2,
         "stake_blue": 4,
-        "stake_purple": 9
+        "stake_black": 8
       },
+      "count": 1,
+      "wins_by_key": {
+        "stake_red": 2,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 9,
+      "wins": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "losses": [
         2,
         2,
@@ -5354,38 +5360,38 @@
         9,
         1,
         39
-      ],
+      ]
+    },
+    "b_checkered": {
+      "losses_by_key": {
+        "stake_purple": 17,
+        "stake_orange": 51,
+        "stake_gold": 57,
+        "stake_blue": 3,
+        "stake_green": 4
+      },
+      "count": 1,
       "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
+        "stake_red": 1,
         "stake_green": 1,
-        "stake_red": 2,
-        "stake_black": 1,
-        "stake_white": 2,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 1,
         "stake_blue": 1,
+        "stake_black": 1,
         "stake_purple": 1
       },
+      "order": 10,
       "wins": [
-        2,
-        2,
+        1,
+        1,
         1,
         1,
         1,
         1,
         1,
         1
-      ]
-    },
-    "b_checkered": {
-      "order": 10,
-      "count": 1,
-      "losses_by_key": {
-        "stake_gold": 57,
-        "stake_orange": 51,
-        "stake_green": 4,
-        "stake_blue": 3,
-        "stake_purple": 17
-      },
+      ],
       "losses": [
         null,
         null,
@@ -5395,17 +5401,42 @@
         17,
         51,
         57
-      ],
+      ]
+    },
+    "b_zodiac": {
+      "losses_by_key": {
+        "stake_white": 22
+      },
+      "count": 1,
       "wins_by_key": {
-        "stake_gold": 1,
-        "stake_orange": 1,
-        "stake_green": 1,
+        "stake_white": 7
+      },
+      "order": 11,
+      "wins": [
+        7
+      ],
+      "losses": [
+        22
+      ]
+    },
+    "b_yellow": {
+      "losses_by_key": {
+        "stake_purple": 14,
+        "stake_white": 1,
+        "stake_blue": 9,
+        "stake_black": 5,
+        "stake_green": 2
+      },
+      "count": 1,
+      "wins_by_key": {
         "stake_red": 1,
-        "stake_black": 1,
+        "stake_green": 1,
         "stake_white": 1,
         "stake_blue": 1,
+        "stake_black": 1,
         "stake_purple": 1
       },
+      "order": 3,
       "wins": [
         1,
         1,
@@ -5415,167 +5446,215 @@
         1,
         1,
         1
-      ]
-    },
-    "b_yellow": {
-      "order": 3,
-      "count": 1,
-      "losses_by_key": {
-        "stake_black": 5,
-        "stake_white": 1,
-        "stake_green": 2,
-        "stake_blue": 2
-      },
+      ],
       "losses": [
         1,
         null,
         2,
         5,
         9,
-        14
-      ],
-      "wins_by_key": {
-        "stake_black": 1,
-        "stake_white": 1,
-        "stake_red": 1,
-        "stake_green": 1
-      },
-      "wins": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    "b_painted": {
-      "order": 12,
-      "count": 1,
-      "losses_by_key": {
-        "stake_white": 1
-      },
-      "losses": [
-        1
-      ],
-      "wins_by_key": {
-        "stake_white": 2
-      },
-      "wins": [
-        2
+        14,
+        5,
+        15
       ]
     },
     "b_anaglyph": {
-      "order": 13,
-      "count": 1,
       "losses_by_key": {
         "stake_white": 2
       },
-      "losses": [
-        2
-      ],
+      "count": 1,
       "wins_by_key": {
         "stake_white": 1
       },
+      "order": 13,
       "wins": [
         1
+      ],
+      "losses": [
+        2
+      ]
+    },
+    "b_plasma": {
+      "losses_by_key": {
+        "stake_red": 4,
+        "stake_green": 20,
+        "stake_orange": 21,
+        "stake_gold": 24,
+        "stake_white": 8,
+        "stake_blue": 8,
+        "stake_black": 7,
+        "stake_purple": 25
+      },
+      "count": 1,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 2,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 14,
+      "wins": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "losses": [
+        8,
+        4,
+        20,
+        7,
+        8,
+        25,
+        21,
+        24
+      ]
+    },
+    "b_erratic": {
+      "losses_by_key": {
+        "stake_red": 5,
+        "stake_green": 8,
+        "stake_orange": 8,
+        "stake_gold": 18,
+        "stake_white": 8,
+        "stake_blue": 5,
+        "stake_black": 1,
+        "stake_purple": 34
+      },
+      "count": 1,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 15,
+      "wins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "losses": [
+        8,
+        5,
+        8,
+        1,
+        5,
+        34,
+        8,
+        18
+      ]
+    },
+    "b_painted": {
+      "losses_by_key": {
+        "stake_white": 1
+      },
+      "count": 1,
+      "wins_by_key": {
+        "stake_white": 2
+      },
+      "order": 12,
+      "wins": [
+        2
+      ],
+      "losses": [
+        1
+      ]
+    },
+    "b_blue": {
+      "losses_by_key": {
+        "stake_white": 16
+      },
+      "count": 1,
+      "wins_by_key": {
+        "stake_white": 1
+      },
+      "order": 2,
+      "wins": [
+        1
+      ],
+      "losses": [
+        16
+      ]
+    },
+    "b_red": {
+      "losses_by_key": {
+        "stake_purple": 2,
+        "stake_orange": 64,
+        "stake_gold": 3,
+        "stake_white": 10,
+        "stake_blue": 17,
+        "stake_green": 1
+      },
+      "count": 1,
+      "wins_by_key": {
+        "stake_red": 1,
+        "stake_green": 1,
+        "stake_orange": 1,
+        "stake_gold": 1,
+        "stake_white": 1,
+        "stake_blue": 1,
+        "stake_black": 1,
+        "stake_purple": 1
+      },
+      "order": 1,
+      "wins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "losses": [
+        10,
+        null,
+        1,
+        null,
+        17,
+        2,
+        64,
+        3
       ]
     }
   },
-  "stake": 9,
-  "challenge_progress": {
-    "unlocked": {},
-    "completed": {
-      "c_rich_1": true
-    }
-  },
-  "high_scores": {
-    "collection": {
-      "tot": 340,
-      "amt": 340,
-      "label": "Collection"
+  "progress": {
+    "challenges": {
+      "tally": 1,
+      "of": 20
     },
-    "win_streak": {
-      "label": "Best Win Streak",
-      "amt": 4
+    "overall_of": 4,
+    "overall_tally": 2.055,
+    "joker_stickers": {
+      "tally": 688,
+      "of": 1200
     },
-    "current_streak": {
-      "label": "",
-      "amt": 1
+    "deck_stakes": {
+      "tally": 65,
+      "of": 120
     },
-    "furthest_round": {
-      "label": "Highest Round",
-      "amt": 42
-    },
-    "furthest_ante": {
-      "label": "Highest Ante",
-      "amt": 13
-    },
-    "most_money": {
-      "label": "Most Money",
-      "amt": 630
-    },
-    "poker_hand": {
-      "label": "Most Played Hand",
-      "amt": 0
-    },
-    "boss_streak": {
-      "label": "Most Bosses in a Row",
-      "amt": 8
-    },
-    "hand": {
-      "label": "Best Hand",
-      "amt": 123200808191
-    }
-  },
-  "hand_usage": {
-    "HighCard": {
-      "count": 3107,
-      "order": "High Card"
-    },
-    "Flush": {
-      "count": 4167,
-      "order": "Flush"
-    },
-    "FullHouse": {
-      "count": 3117,
-      "order": "Full House"
-    },
-    "FourofaKind": {
-      "count": 827,
-      "order": "Four of a Kind"
-    },
-    "Straight": {
-      "count": 1635,
-      "order": "Straight"
-    },
-    "FlushFive": {
-      "count": 187,
-      "order": "Flush Five"
-    },
-    "StraightFlush": {
-      "count": 337,
-      "order": "Straight Flush"
-    },
-    "ThreeofaKind": {
-      "count": 1372,
-      "order": "Three of a Kind"
-    },
-    "FiveofaKind": {
-      "count": 453,
-      "order": "Five of a Kind"
-    },
-    "Pair": {
-      "count": 3201,
-      "order": "Pair"
-    },
-    "FlushHouse": {
-      "count": 135,
-      "order": "Flush House"
-    },
-    "TwoPair": {
-      "count": 3791,
-      "order": "Two Pair"
+    "discovered": {
+      "tally": 340,
+      "of": 340
     }
   }
 }
