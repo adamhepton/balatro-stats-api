@@ -8,18 +8,18 @@ For running the main analysis script, use `npm run balatro` with `type`, `query`
 
 type: `overall`
  - query: `Completionist`
-  - variant not applicable
+   - variant not applicable
  
  - query: `CompletionistPlus`
  - query: `CompletionistPlusPlus`
-  - variant default `summary`: provide `tally` of wins out of total (`of`)
-  - variant: `detail`: break down number of wins (total) by deck/joker as appropriate to the achievement
+   - variant default `summary`: provide `tally` of wins out of total (`of`)
+   - variant: `detail`: break down number of wins (total) by deck/joker as appropriate to the achievement
 
 Basic information which could be used to determine progress towards the specific Completionist named achievements.
 
 e.g. `npm run balatro overall CompletionistPlus detail`
 
- - query: `CompleteCompletionist`
+- query: `CompleteCompletionist`
   - variant not applicable
 
 Combined method to provide percentage progress towards all Completionist achievements.
@@ -30,8 +30,8 @@ type: `jokers` or `decks`
  - query: `count`
  - query: `wins`
  - query: `losses`
-  - variant default: `descending`
-  - variant `ascending`
+   - variant default: `descending`
+   - variant `ascending`
 
 Get a list of either jokers, or decks, that you've picked, won with, or lost with the most / least.
 
