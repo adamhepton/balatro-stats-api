@@ -14,6 +14,7 @@ type: `overall`
  - query: `CompletionistPlusPlus`
    - variant default `summary`: provide `tally` of wins out of total (`of`)
    - variant: `detail`: break down number of wins (total) by deck/joker as appropriate to the achievement
+   - variant: `byStake`: show wins for a deck or joker of at least a certain stake level, from 0 (white) to 7 (gold), using a further `atLeast` parameter, e.g. `npm run balatro overall CompletionistPlus byStake 4` to show all decks where you have won at least at Red Stake (5/8, zero-indexed to 4) level.
 
 Basic information which could be used to determine progress towards the specific Completionist named achievements.
 

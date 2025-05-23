@@ -4,7 +4,7 @@ function getUnlocks(p) {
     return p.progress.discovered;
 }
 
-function getWinsBy(p, type, variant) {
+function getWinsBy(p, type, variant, atLeast) {
     const wins = Object.entries(p[`${type}_usage`])
         .map(([ name, item ]) => { return { name, winsByStake: getSafeArray(item.wins) } })
         .reduce((allWins, winsBy) => {
@@ -19,20 +19,30 @@ function getWinsBy(p, type, variant) {
         case "summary":
         default:
             return Object.values(wins)
-                .map(deckWins => deckWins.unique)
+                .map(deckOrJokerWins => deckOrJokerWins.unique)
                 .reduce((total, val) => { total["tally"] += val; total["of"] += 8; return total }, { tally: 0, of: 0 })
+
+        case "byStake":
+            return Object.entries(wins)
+                .map(([ name, item ]) => { return { name, highestStakeWin: getHighestWinningStake(item.detail) } })
+                .sort((a, b) => b.highestStakeWin - a.highestStakeWin)
+                .filter(item => item.highestStakeWin >= atLeast)
         
         case "detail":
             return wins;
     }
 }
 
-function getWinsByJoker(p, variant) {
-    return getWinsBy(p, "joker", variant);
+function getWinsByJoker(p, variant, atLeast) {
+    return getWinsBy(p, "joker", variant, atLeast);
 }
 
-function getWinsByDeck(p, variant) {
-    return getWinsBy(p, "deck", variant);
+function getWinsByDeck(p, variant, atLeast) {
+    return getWinsBy(p, "deck", variant, atLeast);
+}
+
+function getHighestWinningStake(itemDetail) {
+    return itemDetail.reduce((result, current, idx) => result = current > 0 ? idx : result, 0)
 }
 
 function asPercentage(n) {
@@ -47,22 +57,22 @@ function summariseAchievement(achievementProgress) {
     return asPercentage(achievementProgress.tally / achievementProgress.of);
 }
 
-function getProgress(p, achievement, variant = "summary") {
+function getProgress(p, achievement, variant = "summary", atLeast = 0) {
     switch(achievement) {
         case "Completionist":
             return getUnlocks(p);
 
         case "CompletionistPlus":
-            return getWinsByDeck(p, variant);
+            return getWinsByDeck(p, variant, atLeast);
 
         case "CompletionistPlusPlus":
-            return getWinsByJoker(p, variant);
+            return getWinsByJoker(p, variant, atLeast);
 
         case "CompleteCompletionist":
             return {
-                Completionist: summariseAchievement(getProgress(p, "Completionist", "summary")),
-                CompletionistPlus: summariseAchievement(getProgress(p, "CompletionistPlus", "summary")),
-                CompletionistPlusPlus: summariseAchievement(getProgress(p, "CompletionistPlusPlus", "summary")),
+                Completionist: summariseAchievement(getProgress(p, "Completionist", "summary", atLeast)),
+                CompletionistPlus: summariseAchievement(getProgress(p, "CompletionistPlus", "summary", atLeast)),
+                CompletionistPlusPlus: summariseAchievement(getProgress(p, "CompletionistPlusPlus", "summary", atLeast)),
             }
     }
 }
