@@ -27,15 +27,15 @@ function getWinsBy(p, type, variant) {
     }
 }
 
-function getWinsByJoker(p, variant = 0) {
+function getWinsByJoker(p, variant) {
     return getWinsBy(p, "joker", variant);
 }
 
-function getWinsByDeck(p, variant = 0) {
+function getWinsByDeck(p, variant) {
     return getWinsBy(p, "deck", variant);
 }
 
-function getProgress(p, achievement, variant = null) {
+function getProgress(p, achievement, variant = "summary") {
     switch(achievement) {
         case "Completionist":
             return getUnlocks(p);
