@@ -20,7 +20,7 @@ function getWinsBy(p, type, variant) {
         default:
             return Object.values(wins)
                 .map(deckWins => deckWins.unique)
-                .reduce((total, val) => { total["wins"] += val; total["possible"] += 8; return total }, { wins: 0, possible: 0 })
+                .reduce((total, val) => { total["tally"] += val; total["of"] += 8; return total }, { tally: 0, of: 0 })
         
         case "detail":
             return wins;
@@ -35,6 +35,18 @@ function getWinsByDeck(p, variant) {
     return getWinsBy(p, "deck", variant);
 }
 
+function asPercentage(n) {
+    return new Intl.NumberFormat('default', {
+        style: 'percent',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 1,
+    }).format(n);
+}
+
+function summariseAchievement(achievementProgress) {
+    return asPercentage(achievementProgress.tally / achievementProgress.of);
+}
+
 function getProgress(p, achievement, variant = "summary") {
     switch(achievement) {
         case "Completionist":
@@ -45,6 +57,13 @@ function getProgress(p, achievement, variant = "summary") {
 
         case "CompletionistPlusPlus":
             return getWinsByJoker(p, variant);
+
+        case "CompleteCompletionist":
+            return {
+                Completionist: summariseAchievement(getProgress(p, "Completionist", "summary")),
+                CompletionistPlus: summariseAchievement(getProgress(p, "CompletionistPlus", "summary")),
+                CompletionistPlusPlus: summariseAchievement(getProgress(p, "CompletionistPlusPlus", "summary")),
+            }
     }
 }
 
