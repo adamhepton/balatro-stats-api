@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "convert": "node src/scripts/saveToDisk.js",
+    "prebalatro": "npm run convert",
     "balatro": "node main.js"
   },
   "type": "module",
