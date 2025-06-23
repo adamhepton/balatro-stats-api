@@ -1,8 +1,10 @@
 import readBalatroFile from "#src/util/file-util.js";
 import fs from "fs";
 
+const outputFormat = process.argv.at(2) ?? "json";
+
 ["profile"].forEach(target => {
-    const json = readBalatroFile(`./data/${target}.jkr`, "json");
-    fs.writeFileSync(`./data/${target}.json`, json);
-    console.log(`Written ${target}.json.`)
+    const data = readBalatroFile(`./data/${target}.jkr`, outputFormat);
+    fs.writeFileSync(`./data/${target}.${outputFormat}`, data);
+    console.log(`Written ${target}.${outputFormat}.`)
 });

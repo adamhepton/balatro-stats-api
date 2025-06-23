@@ -48,6 +48,9 @@ function read(target, type) {
   const json = JSON.stringify(jsObj, null, 2);
 
   switch(type) {
+    case "raw":
+      return data;
+      
     case "obj":
       return jsObj;
 
