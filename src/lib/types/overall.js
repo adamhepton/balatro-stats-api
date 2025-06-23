@@ -51,7 +51,7 @@ function getWinsByDeck(p, variant, atLeast) {
 }
 
 function getHighestWinningStake(itemDetail) {
-    return itemDetail.reduce((result, current, idx) => result = current > 0 ? idx : result, 0)
+    return itemDetail.reduce((result, current, idx) => result = current > 0 ? (idx + 1) : result, 0)
 }
 
 function asPercentage(n) {

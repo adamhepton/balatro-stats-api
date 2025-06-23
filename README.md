@@ -14,7 +14,7 @@ type: `overall`
  - query: `CompletionistPlusPlus`
    - variant default `summary`: provide `tally` of wins out of total (`of`)
    - variant: `detail`: break down number of wins (total) by deck/joker as appropriate to the achievement
-   - variant: `byStake`: show wins for a deck or joker of at least a certain stake level, from 0 (white) to 7 (gold), using a further `atLeast` parameter, e.g. `npm run balatro overall CompletionistPlus byStake 4` to show all decks where you have won at least at Red Stake (5/8, zero-indexed to 4) level.
+   - variant: `byStake`: show wins for a deck or joker of at least a certain stake level, from 1 (white) to 8 (gold), using a further `atLeast` parameter, e.g. `npm run balatro overall CompletionistPlus byStake 5` to show all decks where you have won at least at Red Stake (5/8) level.
 
 Basic information which could be used to determine progress towards the specific Completionist named achievements.
 
@@ -34,6 +34,6 @@ type: `jokers` or `decks`
    - variant default: `descending`
    - variant `ascending`
 
-Get a list of either jokers, or decks, that you've picked, won with, or lost with the most / least.
+Get a list of either jokers, or decks, that you've picked, won with, or lost with the most / least.  Can optionally be limited to a number of results using a further `limitBy` parameter
 
-e.g. `npm run balatro jokers count ascending`
+e.g. `npm run balatro jokers count ascending 5` - Return a list of the five jokers you've used least
