@@ -1,6 +1,6 @@
 import getBy from "./generic.js"
 
-function getJokersBy(p, key, variant = "descending", n = 10) {
+function getJokersBy(p, key, variant = "descending", n) {
     return getBy(p, "joker", key, variant, n);
 }
 

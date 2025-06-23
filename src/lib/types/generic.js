@@ -6,7 +6,8 @@ function orderBy(p, type, key, variant) {
         .sort((a, b) => { return (Object.values(variant === "descending" ? b : a)[0] - Object.values(variant === "descending" ? a : b)[0]); });
 }
 
-function getBy(p, type, key, variant, n = 10) {
+function getBy(p, type, key, variant, n) {
+    n = n !== 0 ? n : 10;
     return orderBy(p, type, key, variant).filter( (item, i) => i < n);
 }
 
