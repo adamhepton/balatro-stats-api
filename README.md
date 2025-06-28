@@ -31,9 +31,11 @@ type: `jokers` or `decks`
  - query: `count`
  - query: `wins`
  - query: `losses`
+ - query: `winRate`
    - variant default: `descending`
    - variant `ascending`
 
 Get a list of either jokers, or decks, that you've picked, won with, or lost with the most / least.  Can optionally be limited to a number of results using a further `limitBy` parameter
 
 e.g. `npm run balatro jokers count ascending 5` - Return a list of the five jokers you've used least
+e.g. `npm run balatro decks winRate descending 3` - Return a list of the three jokers you've won with the most (as a percentage of wins v losses), including details of wins, losses and a relative percentage of wins

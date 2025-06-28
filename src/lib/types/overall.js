@@ -1,4 +1,4 @@
-import getSafeArray from "#src/util/array-util.js";
+import { asPercentage, getSafeArray } from "#src/util/array-util.js";
 
 function getUnlocks(p) {
     return p.progress.discovered;
@@ -52,14 +52,6 @@ function getWinsByDeck(p, variant, atLeast) {
 
 function getHighestWinningStake(itemDetail) {
     return itemDetail.reduce((result, current, idx) => result = current > 0 ? (idx + 1) : result, 0)
-}
-
-function asPercentage(n) {
-    return new Intl.NumberFormat('default', {
-        style: 'percent',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 1,
-    }).format(n);
 }
 
 function summariseAchievement(achievementProgress) {
