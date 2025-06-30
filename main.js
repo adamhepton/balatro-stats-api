@@ -1,10 +1,49 @@
 import balatroStats from "#src/lib/balatroStats.js";
 import p from "#data/profile.json"  with { type: "json" };
 
-function getFromArgvOrDefault(i) {
-    const defaults = ["overall", "CompleteCompletionist", "descending", 0];
-    return process.argv.at(i + 2) ?? defaults.at(i);
+const defaultParams = {
+    "overall": {
+        type: "overall",
+        key: "CompleteCompletionist",
+        variant: "",
+        n: 0
+    },
+    "decks": {
+        type: "deck",
+        key: "wins",
+        variant: "descending",
+        n: 5
+    },
+    "jokers": {
+        type: "joker",
+        key: "wins",
+        variant: "descending",
+        n: 5
+    }
 }
 
-const [ type, query, variant, atLeast ] = [ getFromArgvOrDefault(0), getFromArgvOrDefault(1), getFromArgvOrDefault(2), getFromArgvOrDefault(3) ];
-console.log(balatroStats[type].call(this, p, query, variant, atLeast));
+function createParams(passedArgs) {
+    const keys = ["type", "key", "variant", "n"];
+    const lookupType = passedArgs[0] ?? "overall";
+
+    if(Object.keys(defaultParams).includes(lookupType) === false) {
+        throw new Error(`${lookupType} is not a valid lookup type: valid lookup types are ${Object.keys(defaultParams).join(" | ")}.`);
+    }
+    const params = defaultParams[lookupType];
+    passedArgs.shift();
+
+    for (let i = 0; i < passedArgs.length; i++) {
+        params[keys[i + 1]] = passedArgs[i];
+    }
+
+    return params;
+}
+
+try {
+    const params = createParams(process.argv.slice(2, 6));
+    const type = params.type !== "overall" ? "decksAndJokers" : "overall";
+
+    console.log(balatroStats[type].call(this, p, params));
+} catch(err) {
+    console.error(err);
+}

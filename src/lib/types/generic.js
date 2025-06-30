@@ -1,5 +1,12 @@
 import { asPercentage, getSafeArray } from "#src/util/array-util.js";
 
+const allowedTypes = ["overall", "deck", "joker"];
+const allowedKeys = {
+    "joker": [ "count", "wins", "losses"],
+    "deck": [ "wins", "losses" ]
+}
+const allowedVariants = [ "descending", "ascending" ];
+
 function orderBy(p, type, key, variant) {
     return Object.entries(p[`${type}_usage`])
         .map(([ name, item ]) => { return { [name]: getSafeArray(item[key]).reduce( (total, v) => total + (v ?? 0), 0) } })
@@ -7,6 +14,18 @@ function orderBy(p, type, key, variant) {
 }
 
 function getBy(p, type, key, variant, n) {
+    if(allowedTypes.includes(type) === false) {
+        throw new Error(`${type} is not a valid type.`);
+    }
+
+    if(
+        allowedKeys[type].includes(key) === false ||
+        allowedVariants.includes(variant) === false ||
+        n < 1
+    ) {
+        throw new Error("Parameters are not in valid values.");
+    }
+
     n = n !== 0 ? n : 10;
     if(key === "winRate") {
         let wins = orderBy(p, type, "wins", variant);

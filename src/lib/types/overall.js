@@ -37,7 +37,7 @@ function getWinsBy(p, type, variant, atLeast) {
                 .sort((a, b) => b.highestStakeWin - a.highestStakeWin)
                 .filter(item => item.highestStakeWin >= atLeast)
         
-        case "detail":
+        case "detail": 
             return wins;
     }
 }
@@ -58,22 +58,22 @@ function summariseAchievement(achievementProgress) {
     return asPercentage(achievementProgress.tally / achievementProgress.of);
 }
 
-function getProgress(p, achievement, variant = "summary", atLeast = 0) {
-    switch(achievement) {
+function getProgress(p, { key = "CompletionistPlus", variant = "summary", n = 0 } = {}) {
+    switch(key) {
         case "Completionist":
             return getUnlocks(p);
 
         case "CompletionistPlus":
-            return getWinsByDeck(p, variant, atLeast);
+            return getWinsByDeck(p, variant, n);
 
         case "CompletionistPlusPlus":
-            return getWinsByJoker(p, variant, atLeast);
+            return getWinsByJoker(p, variant, n);
 
         case "CompleteCompletionist":
             return {
-                Completionist: summariseAchievement(getProgress(p, "Completionist", "summary", atLeast)),
-                CompletionistPlus: summariseAchievement(getProgress(p, "CompletionistPlus", "summary", atLeast)),
-                CompletionistPlusPlus: summariseAchievement(getProgress(p, "CompletionistPlusPlus", "summary", atLeast)),
+                Completionist: summariseAchievement(getProgress(p, { key: "Completionist", variant: "summary", n })),
+                CompletionistPlus: summariseAchievement(getProgress(p, { key: "CompletionistPlus", variant: "summary", n })),
+                CompletionistPlusPlus: summariseAchievement(getProgress(p, { key: "CompletionistPlusPlus", variant: "summary", n })),
             }
     }
 }

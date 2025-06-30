@@ -1,7 +1,6 @@
 import overall from "./types/overall.js";
-import jokers from "./types/jokers.js";
-import decks from "./types/decks.js";
+import decksAndJokers from "./types/decksAndJokers.js";
 
 export default {
-    overall, jokers, decks
+    overall, decksAndJokers
 }
