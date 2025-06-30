@@ -4,7 +4,7 @@
   "description": "A utility to analyse a saved profile from Balatro",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node bin/test.js",
     "convert": "node src/scripts/saveToDisk.js",
     "prebalatro": "npm run convert",
     "balatro": "node main.js"
@@ -18,5 +18,9 @@
   },
   "dependencies": {
     "pako": "^2.1.0"
+  },
+  "devDependencies": {
+    "@japa/assert": "^4.0.1",
+    "@japa/runner": "^4.2.0"
   }
 }

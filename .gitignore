@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,macos
 
-data/profile.json
-
 ### macOS ###
 # General
 .DS_Store
@@ -175,4 +173,8 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
+# App-specific
 package-lock.json
+data/profile.json
+data/snapshot-profile.json
