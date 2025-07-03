@@ -4,7 +4,7 @@
   "description": "A utility to analyse a saved profile from Balatro",
   "main": "main.js",
   "scripts": {
-    "test": "node bin/test.js",
+    "test": "node src/scripts/test.js",
     "convert": "node src/scripts/saveToDisk.js",
     "prebalatro": "npm run convert",
     "balatro": "node main.js"

@@ -1,6 +1,6 @@
 import { test } from '@japa/runner'
 
-import p from "#data/profile.json"  with { type: "json" };
+import p from "#data/snapshot-profile.json"  with { type: "json" };
 import decksAndJokers from "#src/lib/types/decksAndJokers.js";
 
 test.group('Decks and Jokers API', () => {
