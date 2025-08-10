@@ -177,3 +177,7 @@ dist
 # App-specific
 package-lock.json
 data/profile.json
+
+# OS-level / developer stuff
+.sonarlint
+.vscode
