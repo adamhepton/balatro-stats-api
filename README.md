@@ -1,5 +1,8 @@
 # Balatro Analysis API
 
+| [<img src="https://sonarcloud.io/images/project_badges/sonarcloud-light.svg" height="20" title="SonarQube Cloud" alt="SonarQube Cloud" />](https://sonarcloud.io/summary/new_code?id=adamhepton_balatro-stats-api) | [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=adamhepton_balatro-stats-api&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=adamhepton_balatro-stats-api) | [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=adamhepton_balatro-stats-api&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=adamhepton_balatro-stats-api) | [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=adamhepton_balatro-stats-api&metric=coverage)](https://sonarcloud.io/summary/new_code?id=adamhepton_balatro-stats-api) |
+|---|---|---|---|
+
 Basic Node app which, if given a profile.jkr file from the game's save directory, can perform some analysis on it.  Intended to be used as an API endpoint in a proper application.
 
 Once installed (`npm install`), drop your own profile.jkr file into the data directory, and convert to json using (`npm run convert`) from the root of the repo.
