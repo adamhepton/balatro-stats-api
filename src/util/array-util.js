@@ -1,5 +1,5 @@
 function padArray(arr, l, v) {
-    return arr.map(x => x === null ? 0 : x).concat(Array(l-arr.length).fill(v))
+    return Array(l-arr.length).fill(Number(v)).concat(arr.map(x => x === null ? Number(0) : Number(x)))
 }
 
 function getSafeArray(input) {
