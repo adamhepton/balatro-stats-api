@@ -83,9 +83,10 @@ test.group('Overall API', () => {
       'CompletionistPlus',
       'CompletionistPlusPlus',
     ])
-    assert.match(result.Completionist, /\d+\.?\d?\%/);
-    assert.match(result.CompletionistPlus, /\d+\.?\d?\%/);
-    assert.match(result.CompletionistPlusPlus, /\d+\.?\d?\%/);
+    const percentageFormat = new RegExp(/^\d?\d\.?\d?%$|^100%$/);
+    assert.match(result.Completionist, percentageFormat);
+    assert.match(result.CompletionistPlus, percentageFormat);
+    assert.match(result.CompletionistPlusPlus, percentageFormat);
   })
 
   test('handles empty player data gracefully', ({ assert }) => {
