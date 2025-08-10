@@ -10,7 +10,7 @@ test.group('Array Util', () => {
     const res = getSafeArray('3');
     assert.strictEqual(Array.isArray(res), true);
     assert.strictEqual(res.length, 8);
-    assert.deepEqual(res, [0, 0, 0, 0, 0, 0, 0, 3]);
+    assert.deepEqual(res, [3, 0, 0, 0, 0, 0, 0, 0]);
   });
 
   test('getSafeArray handles arrays with nulls and pads correctly', ({ assert }) => {
@@ -18,7 +18,7 @@ test.group('Array Util', () => {
     // null should be turned into 0 via padArray inside implementation
     assert.strictEqual(Array.isArray(res), true);
     assert.strictEqual(res.length, 8);
-    assert.deepEqual(res, [0, 0, 0, 0, 0, 1, 0, 2]);
+    assert.deepEqual(res, [1, 0, 2, 0, 0, 0, 0, 0]);
   });
 
   test('getSafeArray returns array of zeros for non-numeric non-array input', ({ assert }) => {
