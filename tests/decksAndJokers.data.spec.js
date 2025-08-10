@@ -4,17 +4,6 @@ import p from "#data/snapshot-profile.json"  with { type: "json" };
 import decksAndJokers from "#src/lib/types/decksAndJokers.js";
 
 test.group('Decks and Jokers Data', () => {
-  const amendedParameters = {
-    "type": "joker",
-    "key": "losses",
-    "variant": "ascending",
-    "n": 3
-  }
-
-  function filterObject(obj, cb) {
-    return Object.fromEntries(Object.entries(obj).filter(([key, val]) => cb(key, val)));
-  }
-
   test('gets correct five decks with largest number of wins', ({ assert }) => {
     const returnedData = decksAndJokers(p, {
       "type": "deck",

@@ -3,7 +3,14 @@ function padArray(arr, l, v) {
 }
 
 function getSafeArray(input) {
-    return padArray(Array.isArray(input) ? input : Number.isNaN(Number(input)) ? [] : [Number(input)], 8, 0)
+    let subject = [];
+    if (Array.isArray(input)) {
+        subject = input;
+    } else if (Number.isNaN(Number(input)) === false) {
+        subject = [Number(input)];
+    }
+
+    return padArray(subject, 8, 0);
 }
 
 function asPercentage(n) {

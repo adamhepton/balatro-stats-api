@@ -10,27 +10,13 @@ function getWinsBy(p, type, variant, atLeast) {
         .reduce((allWins, winsBy) => {
             allWins[winsBy.name] = {
                 detail: winsBy.winsByStake,
-                unique: winsBy.winsByStake.reduce((total, wins) => total += wins >= 1 ? 1 : 0, 0),
+                unique: winsBy.winsByStake.reduce((total, wins) => total + (wins >= 1 ? 1 : 0), 0),
                 highestStakeWin: getHighestWinningStake(winsBy.winsByStake)
             }
             return allWins
         }, {})
 
     switch(variant) {
-        case "summary":
-        default:
-            switch(type) {
-                case "deck":
-                    return Object.values(wins)
-                        .map(deckWins => deckWins.unique)
-                        .reduce((total, val) => { total["tally"] += val; total["of"] += 8; return total }, { tally: 0, of: 0 })
-                
-                case "joker":
-                    return Object.values(wins)
-                        .map(deckWins => deckWins.highestStakeWin)
-                        .reduce((total, val) => { total["tally"] += (val === 7); total["of"] += 1; return total }, { tally: 0, of: 0 })
-            }
-
         case "byStake":
             return Object.entries(wins)
                 .map(([ name, item ]) => { return { name, highestStakeWin: item.highestStakeWin } })
@@ -39,6 +25,21 @@ function getWinsBy(p, type, variant, atLeast) {
         
         case "detail": 
             return wins;
+
+        case "summary":
+        default:
+            switch(type) {
+                case "joker":
+                    return Object.values(wins)
+                        .map(deckWins => deckWins.highestStakeWin)
+                        .reduce((total, val) => { total["tally"] += (val === 7); total["of"] += 1; return total }, { tally: 0, of: 0 })
+
+                case "deck":
+                default:
+                    return Object.values(wins)
+                        .map(deckWins => deckWins.unique)
+                        .reduce((total, val) => { total["tally"] += val; total["of"] += 8; return total }, { tally: 0, of: 0 })
+            }
     }
 }
 
@@ -51,7 +52,7 @@ function getWinsByDeck(p, variant, atLeast) {
 }
 
 function getHighestWinningStake(itemDetail) {
-    return itemDetail.reduce((result, current, idx) => result = current > 0 ? (idx + 1) : result, 0)
+    return itemDetail.reduce((result, current, idx) => current > 0 ? (idx + 1) : result, 0)
 }
 
 function summariseAchievement(achievementProgress) {

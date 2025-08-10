@@ -26,7 +26,6 @@ function getBy(p, type, key, variant, n) {
         throw new Error("Parameters are not in valid values.");
     }
 
-    n = n !== 0 ? n : 10;
     if(key === "winRate") {
         let wins = orderBy(p, type, "wins", variant);
         let losses = orderBy(p, type, "losses", variant);
