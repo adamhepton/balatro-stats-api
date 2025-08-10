@@ -1,0 +1,5 @@
+{
+    "all": true,
+    "reporter": ["lcovonly", "text", "text-summary"],
+    "reports-dir": "./coverage"
+}

@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "node src/scripts/test.js",
+    "coverage": "c8 npm run test",
     "convert": "node src/scripts/saveToDisk.js",
     "prebalatro": "npm run convert",
     "balatro": "node main.js"
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@japa/assert": "^4.0.1",
-    "@japa/runner": "^4.2.0"
+    "@japa/runner": "^4.2.0",
+    "c8": "^10.1.3"
   }
 }
