@@ -13,6 +13,7 @@ function getWinsBy(p, type, variant, atLeast) {
                 unique: winsBy.winsByStake.reduce((total, wins) => total + (wins >= 1 ? 1 : 0), 0),
                 highestStakeWin: getHighestWinningStake(winsBy.winsByStake)
             }
+
             return allWins
         }, {})
 
@@ -32,7 +33,7 @@ function getWinsBy(p, type, variant, atLeast) {
                 case "joker":
                     return Object.values(wins)
                         .map(deckWins => deckWins.highestStakeWin)
-                        .reduce((total, val) => { total["tally"] += (val === 7); total["of"] += 1; return total }, { tally: 0, of: 0 })
+                        .reduce((total, val) => { total["tally"] += (val === 8); total["of"] += 1; return total }, { tally: 0, of: 0 })
 
                 case "deck":
                 default:
