@@ -60,4 +60,11 @@ function read(target, type) {
   }
 }
 
+export {
+  decompress,
+  rawToJSON,
+  FixJSONArrays,
+  read
+};
+
 export default read;
