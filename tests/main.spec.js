@@ -1,5 +1,5 @@
 import { test } from '@japa/runner'
-import { createParams, makeCall } from '#main.js';
+import { createParams } from '#main.js';
 
 test.group('Main Entrypoint', (group) => {
   test('createParams returns correct params for overall', async ({ assert }) => {
