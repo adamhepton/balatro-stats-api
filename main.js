@@ -39,11 +39,22 @@ function createParams(passedArgs) {
     return params;
 }
 
-try {
+function makeCall(type, data, params) {
+    try {
+        return balatroStats[type].call(this, data, params);
+    } catch (err) {
+        console.error(err);
+        return null;
+    }
+}
+
+export { createParams, makeCall };
+export default function getStats() {
     const params = createParams(process.argv.slice(2, 6));
     const type = params.type !== "overall" ? "decksAndJokers" : "overall";
+    return makeCall(type, p, params);
+}
 
-    console.log(balatroStats[type].call(this, p, params));
-} catch(err) {
-    console.error(err);
+if (process.argv[1].endsWith("main.js")) {
+    console.log(getStats());
 }

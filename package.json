@@ -14,6 +14,7 @@
   "author": "Prox <prox@prox.fyi>",
   "license": "ISC",
   "imports": {
+    "#main.js": "./main.js",
     "#data/*.json": "./data/*.json",
     "#src/*.js": "./src/*.js"
   },
